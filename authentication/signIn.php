@@ -11,6 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // connecting to database 
 
+    // hello
+
+    $dummy = 'hello';
+
     $servername = "localhost";
     $username = "root";
     $password = "";
