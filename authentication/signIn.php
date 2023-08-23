@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // hello
 
-    $dummy = 'hello';
+    
 
     $servername = "localhost";
     $username = "root";
