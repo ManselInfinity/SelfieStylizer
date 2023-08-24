@@ -121,8 +121,8 @@ body{
     transition: .5s;
 
 }
-.form-group input:focus~label,
-.form-group input:valid~label{
+.input-box input:focus~label,
+.input-box input:valid~label{
     top: -5px;
 }
 
