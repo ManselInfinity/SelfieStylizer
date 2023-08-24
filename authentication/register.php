@@ -6,6 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    echo "hello";
+
     // connecting to database 
 
     $servername = "localhost";
@@ -31,12 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users VALUES('$email', '$hashedPasseword', 100)";
+    $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100)";
     $conn->query($sql);
 
 
 
     //! redirect to signin page now
+
+    header("Location:.\..\model6.html");
 
 
 }
