@@ -121,8 +121,8 @@ body{
     transition: .5s;
 
 }
-.form-group input:focus~label,
-.form-group input:valid~label{
+.input-box input:focus~label,
+.input-box input:valid~label{
     top: -5px;
 }
 
@@ -148,7 +148,7 @@ body{
 }
 
 
-.remember-box{
+.remember-forget{
     font-size: .9em;
     color: black;
     font-weight: 500;
@@ -157,12 +157,12 @@ body{
     justify-content: space-between;
 }
 
-.remember-forgot a{
+.remember-forget a{
     color: black;
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forget a:hover{
    text-decoration: underline;
 }
 
