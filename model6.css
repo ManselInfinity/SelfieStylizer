@@ -1,5 +1,8 @@
 body {
+
     background: url('imp90.png');
+    background-color: grey;
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
 
