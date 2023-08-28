@@ -42,14 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $row = $result->fetch_assoc();
 
-    // hashing entered password to compare with whats in the database 
-
-    // $enteredPassword = password_hash($password, PASSWORD_DEFAULT);
-
-    // echo "entered password hash = $enteredPassword";
-    // $pass = $row['password'];
-    // echo "stored password hash = $pass ";
-
+    //verifying entered password with whats in the database 
     if (password_verify($password, $row['password'])) {
         // User authentication valid, let user through, 
         //? give user some token maybe 
@@ -89,6 +82,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $mail->AddAddress($email);
 
+        // creating a session for the current user 
+        session_start();
+        $_SESSION['otp'] = $otp;
+        // $_SESSION['username'] = $username ;
+
         //send the email and check if successful 
         //todo remove echo before deploy
         if (!$mail->Send()) {
@@ -97,7 +95,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "Message has been sent";
         }
 
-        
+        //! redirect to otp verification page:
+
 
 
     } else {

@@ -38,7 +38,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database table 'users': " . $conn->error;
 }
 
-$sql = "CREATE TABLE images (email varchar(50) PRIMARY KEY, image LONGBLOB ) ";
+$sql = "CREATE TABLE images (email varchar(50), image LONGBLOB, FOREIGN KEY (email) REFERENCES users(email) ); ";
 
 if ($conn->query($sql) === TRUE) {
     echo "Database table 'images' created successfully";
