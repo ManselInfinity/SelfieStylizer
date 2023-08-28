@@ -45,13 +45,13 @@ Relationship:
        |
        |
        | N
-+---------------------+
++-----------------------------+
 | Users - Images Relationship |
-+---------------------+
-| One User can have      |
-| multiple Images.       |
-| Each Image is associated |
-| with exactly one User.   |
-+---------------------+
++-----------------------------+
+| One User can have           |
+| multiple Images.            |
+| Each Image is associated    |
+| with exactly one User.      |
++-----------------------------+
 
 ```
