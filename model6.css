@@ -1,10 +1,10 @@
-body{
-    background:url('imp90.png');
+body {
+    background: url('imp90.png');
     background-size: cover;
     background-repeat: no-repeat;
 
-      /* background-color: #000011;*/
-   }
+    /* background-color: #000011;*/
+}
 
 /* .wrapper{
     position: relative;
@@ -24,11 +24,11 @@ body{
 } */
 
 
-.wrapper{
+.wrapper {
     position: absolute;
     top: 5%;
     right: 5%;
-    
+
     width: 400px;
     height: 600px;
     background: transparent;
@@ -41,43 +41,44 @@ body{
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: height .2s ease,height .2s ease;
-} 
+    transition: height .2s ease, height .2s ease;
+}
 
-.wrapper.active-popup{
+.wrapper.active-popup {
     transform: scale(1);
 }
 
-.wrapper.active{
+.wrapper.active {
     height: 520px;
 }
 
-.wrapper .form-box{
+.wrapper .form-box {
     width: 100%;
     padding: 40px;
 }
 
-.wrapper .form-box.login{
+.wrapper .form-box.login {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-.wrapper.active .form-box.login{
+
+.wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
 
-.wrapper .form-box.register{
+.wrapper .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
- 
-.wrapper.active .form-box.register{
+
+.wrapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
 }
 
-.wrapper .icon-close{
+.wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -94,14 +95,14 @@ body{
     z-index: 1;
 }
 
-.form-box h2{
-  font-size: 2em;
-  color: black;
-  text-align: center;
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
 
 }
 
-.input-box{
+.input-box {
     position: relative;
     width: 100%;
     height: 50px;
@@ -109,10 +110,10 @@ body{
     margin: 30px 0;
 }
 
-.input-box label{
+.input-box label {
     position: absolute;
     top: 50%;
-    left:5px;
+    left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
     color: black;
@@ -121,12 +122,13 @@ body{
     transition: .5s;
 
 }
+
 .input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:valid~label {
     top: -5px;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -138,7 +140,7 @@ body{
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon{
+.input-box .icon {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
@@ -148,7 +150,7 @@ body{
 }
 
 
-.remember-forget{
+.remember-forget {
     font-size: .9em;
     color: black;
     font-weight: 500;
@@ -157,16 +159,16 @@ body{
     justify-content: space-between;
 }
 
-.remember-forget a{
+.remember-forget a {
     color: black;
     text-decoration: none;
 }
 
-.remember-forget a:hover{
-   text-decoration: underline;
+.remember-forget a:hover {
+    text-decoration: underline;
 }
 
-.btn{
+.btn {
     width: 100%;
     height: 45px;
     background: black;
@@ -179,7 +181,7 @@ body{
     font-weight: 500;
 }
 
-.login-register{
+.login-register {
     font-size: .9em;
     color: black;
     text-align: center;
@@ -194,16 +196,11 @@ body{
 
 }
 
-.login-register p a:hover{
+.login-register p a:hover {
     text-decoration: underline;
 }
 
-
-
-
-
-
-.l{
+.l {
     position: absolute;
     top: -5%;
     left: -2%;
@@ -214,15 +211,15 @@ body{
     background: transparent;
     border-radius: 20px;
     backdrop-filter: blur(40px);
-    box-shadow: 0 0 30px rgb(0, 0, 0,8.9);
-     justify-content: center;
-    align-items: center; 
+    box-shadow: 0 0 30px rgb(0, 0, 0, 8.9);
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    
-   }
+
+}
 
 
-   .btnlogin-popup{
+.btnlogin-popup {
     position: absolute;
     bottom: -50%;
     left: 10%;
@@ -236,55 +233,84 @@ body{
     background: transparent;
     backdrop-filter: blur(40px);
 }
-.btnlogin-popup:hover{
+
+.btnlogin-popup:hover {
     color: #689cb4;
 }
 
 
 
-.navbar li a{
+.navbar li a {
     position: absolute;
     left: 10%;
     text-decoration: none;
     font-size: 20px;
     font-weight: 900;
-    color:  #f7f7f7;
+    color: #f7f7f7;
     padding: 0px;
-}  
-.navbar li a:hover, .navbar li a:active{
+}
+
+.navbar li a:hover, .navbar li a:active {
     text-decoration: underline;
     color: #689cb4;
 }
 
 
 
-.contain{
-    position:absolute;
+.contain {
+    position: absolute;
     font-weight: bold;
-            left: 128px;
-            top:75%;
-            width: 30%;
-            padding: 5px;
-            text-align: center;
-            font-style: italic;
-            font-size: 20px;
- /* border: 2px solid rgb(248, 244, 244);*/
-  color: #f2f7fa;
+    left: 128px;
+    top: 75%;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    /* border: 2px solid rgb(248, 244, 244);*/
+    color: #f2f7fa;
 
 }
-.mid{
-            display: inline-block;
-            width:10%;
-            /*border:2px solid rgb(245, 240, 240);*/
-            position:absolute;
-            left: 0%;
-            font-size: 30px;
-            padding: 1%;
-            top:12px;
-            color: blue;
-        }
-.navbar{
+
+.mid {
+    display: inline-block;
+    width: 10%;
+    /*border:2px solid rgb(245, 240, 240);*/
+    position: absolute;
+    left: 0%;
+    font-size: 30px;
+    padding: 1%;
+    top: 12px;
+    color: blue;
+}
+
+.navbar {
     color: rgb(71, 69, 69);
     list-style: none;
-    
-        }
+
+}
+
+#message {
+    display: none;
+    background: #8ba8b881;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message h1 {
+    padding: 5px 25px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
