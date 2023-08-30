@@ -29,7 +29,6 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
-
 $sql = "CREATE TABLE users (email varchar(50) PRIMARY KEY, password varchar(250), credits int(5) ) ";
 
 if ($conn->query($sql) === TRUE) {
