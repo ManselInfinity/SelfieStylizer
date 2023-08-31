@@ -52,10 +52,9 @@ Users - Images Relationship:
 ```
 ## References
 <a id="1">[1]</a>
-@article{chong2021jojogan,
-  title={JoJoGAN: One Shot Face Stylization},
-  author={Chong, Min Jin and Forsyth, David},
-  journal={arXiv preprint arXiv:2112.11641},
-  year={2021}
-}
+  title=JoJoGAN: One Shot Face Stylization
+  author=Chong, Min Jin and Forsyth, David
+  journal=arXiv preprint arXiv:2112.11641
+  year=2021
+
 
