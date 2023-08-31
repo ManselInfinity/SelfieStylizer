@@ -1,11 +1,11 @@
 body {
 
     background: url('imp91.png');
-    /* background-color: grey;
-    background-blend-mode: multiply; */
+    background-color: rgba(128, 128, 128, 0.589);
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
 
     /* background-color: #000011;*/
 }
@@ -255,7 +255,8 @@ body {
     padding: 0px;
 }
 
-.navbar li a:hover, .navbar li a:active {
+.navbar li a:hover,
+.navbar li a:active {
     text-decoration: underline;
     color: #689cb4;
 }

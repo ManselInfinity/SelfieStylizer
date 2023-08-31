@@ -89,8 +89,9 @@
                     <span class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" name="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    <!-- CHANGE PASSWORD LENGTH LATER, maybe, Idk -->
+                    <input type="password" name="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 3 or more characters"
                         required>
                     <label>Password</label>
                 </div>
