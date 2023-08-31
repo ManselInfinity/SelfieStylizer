@@ -50,6 +50,16 @@ Users - Images Relationship:
 +-----------------------------+
 
 ```
+
+# Stuff to change for larger image files :
+C:\xampp\mysql\bin\my.ini set:
+
+```
+max_allowed_packet=100M
+```
+
+
+
 ## References
   Title: JoJoGAN: One Shot Face Stylization<br>
   Author: Chong, Min Jin and Forsyth, David<br>

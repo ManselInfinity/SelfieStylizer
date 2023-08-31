@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    //  $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100)";
-    //  $conn->query($sql);
+    $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100)";
+    $conn->query($sql);
 
     //sending otp mail :
     $mail = new PHPMailer();
