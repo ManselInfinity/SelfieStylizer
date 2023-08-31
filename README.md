@@ -1,10 +1,5 @@
 # SelfieStylizer
 
-$mail->Username = 'selfiestyliser@gmail.com';
-
-//Password to use for SMTP authentication
-$mail->Password = 'yysuvfraiqvccedb';
-
 install https://getcomposer.org/download/
 run following commmand inside proect directory 
 
@@ -15,20 +10,20 @@ composer require phpmailer/phpmailer
 ER Diagram :
 Entities:
 
-    Users:
+Users:
         Attributes:
             Email (Primary Key)
             Password
             Credits
 
-    Images:
+Images:
         Attributes:
             Email (Foreign Key referencing Users)
             Image (LONGBLOB)
 
 Relationship:
 
-    Users - Images Relationship:
+Users - Images Relationship:
         One User can have multiple Images.
         Each Image is associated with exactly one User.
 
@@ -55,3 +50,4 @@ Relationship:
 +-----------------------------+
 
 ```
+
