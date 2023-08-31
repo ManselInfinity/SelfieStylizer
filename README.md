@@ -51,10 +51,10 @@ Users - Images Relationship:
 
 ```
 ## References
-<a id="1">[1]</a>
-  title=JoJoGAN: One Shot Face Stylization
-  author=Chong, Min Jin and Forsyth, David
-  journal=arXiv preprint arXiv:2112.11641
-  year=2021
+  Title: JoJoGAN: One Shot Face Stylization
+  Author: Chong, Min Jin and Forsyth, David
+  Journal: arXiv preprint arXiv:2112.11641
+  Year: 2021
+  Link: https://github.com/mchong6/JoJoGAN.git 
 
 
