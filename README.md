@@ -50,7 +50,8 @@ Users - Images Relationship:
 +-----------------------------+
 
 ```
-
+## References
+<a id="1">[1]</a>
 @article{chong2021jojogan,
   title={JoJoGAN: One Shot Face Stylization},
   author={Chong, Min Jin and Forsyth, David},
