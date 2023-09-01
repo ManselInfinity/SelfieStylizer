@@ -5,6 +5,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 
     /* background-color: #000011;*/

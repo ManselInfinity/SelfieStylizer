@@ -98,6 +98,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //! redirect to otp verification page:
 
 
+        header("Location:.\..\otp1.html");
+
+
 
     } else {
         // password not valid, enter again
