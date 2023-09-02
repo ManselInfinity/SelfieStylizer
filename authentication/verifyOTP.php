@@ -11,11 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo $sessionOTP;
     echo "<br>";
 
-    if ($userOTP === $sessionOTP) {
+    if ($userOTP == $sessionOTP) {
         // otp verified, redirect to user landing page
         echo "otp verified";
         //! redirect here maybe 
-        header("Location:.\..\otpRedirect.html");
+        header("Location: otpRedirect.html");
     }
 }
 ?>
