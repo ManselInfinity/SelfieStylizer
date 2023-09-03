@@ -3,9 +3,11 @@
 
 
 require('.\..\vendor\autoload.php');
+require('.\..\config.php');
 
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
+
 
 $success = true;
 $error = "Payment Failed";
