@@ -29,7 +29,11 @@ def parse_args():
 
 
 if __name__ == "__main__":
+    print("hello")
+    
     args = parse_args()
+    print(args.model_name)
+    
     device = args.device
     filename = args.input
     filepath = f'test_input/{filename}'
@@ -52,6 +56,7 @@ if __name__ == "__main__":
 
 
     #original_generator = Generator(1024, latent_dim, 8, 2).to(device)
+    print('models', args.model_name+'.pt')
     ckpt = torch.load(os.path.join('models', args.model_name+'.pt'), map_location=lambda storage, loc: storage)
     generator.load_state_dict(ckpt["g"], strict=False)
 

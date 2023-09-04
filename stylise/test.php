@@ -7,7 +7,7 @@
 $style = "jojo";
 
 // execute the commmand now
-$command_exec = escapeshellcmd("python .\..\jojoGAN/evaluate.py --model_name ${style}");
+$command_exec = escapeshellcmd("python JoJoGAN\evaluate.py --model_name ${style}");
 $str_output = shell_exec($command_exec);
 
 
