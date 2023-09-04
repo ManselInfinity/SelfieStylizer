@@ -42,7 +42,7 @@ $_SESSION['razorpay_payment_id'] = $order['id'];
     <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="<?= $keyId ?>"
         data-amount="<?= $amount * 100 ?>" data-currency="<?= $currency ?>" data-order_id="<?= $orderId ?>"
         data-buttontext="Pay with Razorpay" data-name="Acme Corp" data-description="Lorem ipsum something something"
-        data-image="https://example.com/your_logo.jpg" data-prefill.name="John Doe"
-        data-prefill.email="gaurav.kumar@example.com" data-theme.color="#689cb4"></script>
+        data-image=".\..\logo.png" data-prefill.name="John Doe" data-prefill.email="gaurav.kumar@example.com"
+        data-theme.color="#689cb4"></script>
     <input type="hidden" custom="Hidden Element" name="hidden" />
 </form>
