@@ -1,16 +1,16 @@
 import torch
 from torchvision import transforms, utils
 from util import *
-from PIL import Image
+# from PIL import Image
 import math
 import random
 import os
 import argparse
 
-import numpy as np
+# import numpy as np
 from torch import nn, autograd, optim
 from torch.nn import functional as F
-from tqdm import tqdm
+# from tqdm import tqdm
 from model import *
 from e4e_projection import projection as e4e_projection
 
