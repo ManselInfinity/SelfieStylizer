@@ -1,16 +1,16 @@
 import torch
 from torchvision import transforms, utils
 from util import *
-# from PIL import Image
+from PIL import Image
 import math
 import random
 import os
 import argparse
 
-# import numpy as np
+import numpy as np
 from torch import nn, autograd, optim
 from torch.nn import functional as F
-# from tqdm import tqdm
+from tqdm import tqdm
 from model import *
 from e4e_projection import projection as e4e_projection
 
@@ -23,20 +23,15 @@ def parse_args():
     parser.add_argument("--model_name", default="jojo", help="model")
     parser.add_argument("--n_sample", default="5", help="n_sample")
     parser.add_argument("--seed", default="3000", help="seed")
-    parser.add_argument("--saveName", default="temp", help="file name to save image as")
     args = parser.parse_args()
     return args
 
 
 if __name__ == "__main__":
-    print("hello")
-    
     args = parse_args()
-    print(args.model_name)
-    
     device = args.device
     filename = args.input
-    filepath = f'test_input/{filename}'
+    filepath = f'test_input\{filename}'
     name = strip_path_extension(filepath)+'.pt'
     aligned_face = align_face(filepath)
     my_w = e4e_projection(aligned_face, name, device).unsqueeze(0)
@@ -56,7 +51,6 @@ if __name__ == "__main__":
 
 
     #original_generator = Generator(1024, latent_dim, 8, 2).to(device)
-    print('models', args.model_name+'.pt')
     ckpt = torch.load(os.path.join('models', args.model_name+'.pt'), map_location=lambda storage, loc: storage)
     generator.load_state_dict(ckpt["g"], strict=False)
 
@@ -70,5 +64,5 @@ if __name__ == "__main__":
         face = transform(aligned_face).unsqueeze(0).to(device)
         my_output = torch.cat([face, my_sample], 0)
         print(strip_path_extension(filepath))
-        clear_name = "".join(strip_path_extension(filepath).split('/')[1])
-        torchvision.utils.save_image(utils.make_grid(my_output, normalize=True, range=(-1, 1)), "results/"+args.saveName+".png")
+        # clear_name = "".join(strip_path_extension(filepath).split('/')[1])
+        torchvision.utils.save_image(utils.make_grid(my_output, normalize=True, range=(-1, 1)), "results/result_"+args.model_name+"_"+"temp"+".png")

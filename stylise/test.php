@@ -1,19 +1,17 @@
 <?php
 
 
-
 // args list: arg1: style
 // acceptable values: "art", "arcane_caitlyn", "arcane_jinx", "disney", "jojo", "jojo_yasuho", "sketch_multi"
-$style = "jojo";
+$style = "art";
 
-// execute the commmand now
-$command_exec = escapeshellcmd("python JoJoGAN\evaluate.py --model_name ${style}");
-$str_output = shell_exec($command_exec);
+$command = "python -u evaluate.py --model_name ${style}";
+exec($command, $output);
+//var_dump($output);
 
 
-
-echo $str_output;
-
+//echo $str_output;
+//echo "hello";
 
 
 ?>
