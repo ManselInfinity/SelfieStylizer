@@ -11,7 +11,7 @@ $keySecret = "Lsu61dhZHgtrtfSfnVicokJf";
 
 $api = new Api($keyId, $keySecret);
 
-$amount = 1;
+$amount = 100;
 $currency = 'INR';
 
 //! get user id from databse
@@ -26,7 +26,7 @@ $orderId = $order['id'];
 
 
 
-$_SESSION['razorpay_payment_id'] = $order['id'];
+$_SESSION['razorpay_order_id'] = $order['id'];
 ?>
 
 <style>
@@ -42,7 +42,7 @@ $_SESSION['razorpay_payment_id'] = $order['id'];
     <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="<?= $keyId ?>"
         data-amount="<?= $amount * 100 ?>" data-currency="<?= $currency ?>" data-order_id="<?= $orderId ?>"
         data-buttontext="Pay with Razorpay" data-name="Acme Corp" data-description="Lorem ipsum something something"
-        data-image=".\..\logo.png" data-prefill.name="John Doe" data-prefill.email="gaurav.kumar@example.com"
+        data-image=".\..\logo.png" data-prefill.name="John Doe" data-prefill.email="Pahendra@Mriolkar.com"
         data-theme.color="#689cb4"></script>
     <input type="hidden" custom="Hidden Element" name="hidden" />
 </form>
