@@ -30,7 +30,7 @@ $_SESSION['razorpay_order_id'] = $order['id'];
 ?>
 
 
-//! change this obviously
+<!-- //! change this obviously -->
 
 
 <style>
@@ -62,7 +62,7 @@ $_SESSION['razorpay_order_id'] = $order['id'];
         /* border-radius: 5px;
          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         background: transparent; */
-        border: 2px solid rgba(255, 255, 255, .5);
+        border: 2px solid lightcyan;
         border-radius: 20px;
         backdrop-filter: blur(10px);
         box-shadow: 0 0 30px rgba(0, 0, 0, .5);
