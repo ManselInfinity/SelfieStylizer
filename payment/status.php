@@ -1,7 +1,7 @@
 <?php
 
 require('.\..\vendor\autoload.php');
-require('.\..\config.php');
+require('.\..\dbConfig.php');
 
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
@@ -15,7 +15,7 @@ $keySecret = "Lsu61dhZHgtrtfSfnVicokJf";
 session_start();
 
 
-if (empty($_POST['razorpay_payment_id']) === false) {
+if (empty($_POST['razorpay_order_id']) === false) {
     $api = new Api($keyId, $keySecret);
 
     try {
