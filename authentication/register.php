@@ -1,6 +1,8 @@
 <?php
 
-require('C:\xampp\htdocs\SelfieStylizer\vendor\autoload.php');
+require('./../vendor/autoload.php');
+
+echo "hello";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -90,5 +92,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // header("Location:.\..\model6.html");
 
-    header("Location:.\..\otp1.html");
+    header("Location:./../otp1.html");
 }
