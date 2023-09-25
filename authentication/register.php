@@ -1,6 +1,7 @@
 <?php
 
 require('./../vendor/autoload.php');
+require_once './../dbConfig.php';
 
 echo "hello";
 
@@ -14,14 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     echo "hello";
 
-    // connecting to database 
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "SelfieStylizer";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
 
     $sql = "SELECT * from users where users.email = '$email'";
     $result = $conn->query($sql);

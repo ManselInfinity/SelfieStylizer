@@ -1,7 +1,7 @@
 <?php
 
-require('.\..\vendor\autoload.php');
-require('.\..\dbConfig.php');
+require('./../vendor/autoload.php');
+require('./../dbConfig.php');
 
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
