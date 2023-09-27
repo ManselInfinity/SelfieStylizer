@@ -1,0 +1,15 @@
+        body {
+            background-color: aliceblue;
+        }
+
+        #fileInput {
+            display: none;
+
+        }
+
+        #uploadButton {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
