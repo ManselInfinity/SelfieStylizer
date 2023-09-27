@@ -1,6 +1,7 @@
 <?php
 
 require('./../vendor/autoload.php');
+require_once './../dbConfig.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -11,24 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $mail = new PHPMailer();
 
-
-    // $enteredPassword = password_hash($password, PASSWORD_DEFAULT);
-    // echo $enteredPassword;
-
-    //echo "email = $email, password = $password";
-
-    // connecting to database 
-
-    // hello
-
-
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "SelfieStylizer";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
 
     $sql = "SELECT * from users where users.email = '$email'";
     $result = $conn->query($sql);
@@ -84,7 +67,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // creating a session for the current user 
         session_start();
+
+        // storing useful information in the session 
         $_SESSION['otp'] = $otp;
+        $_SESSION['email'] = $email;
+
         // $_SESSION['username'] = $username ;
 
         //send the email and check if successful 
@@ -98,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //! redirect to otp verification page:
 
 
-        header("Location:.\..\otp1.html");
+        header("Location:./../otp1.html");
 
 
 
