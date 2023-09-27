@@ -5,13 +5,15 @@
 // acceptable values: "art", "arcane_caitlyn", "arcane_jinx", "disney", "jojo", "jojo_yasuho", "sketch_multi"
 $style = "arcane_jinx";
 
-$command = "python -u evaluate.py --model_name ${style}";
+$command = "python -u /Applications/XAMPP/xamppfiles/htdocs/SelfieStylizer/stylise/evaluate.py";
+//--model_name $style
+
 exec($command, $output);
-//var_dump($output);
+var_dump($output);
 
 
-//echo $str_output;
-//echo "hello";
+echo $str_output;
+echo "hello";
 
 
 ?>

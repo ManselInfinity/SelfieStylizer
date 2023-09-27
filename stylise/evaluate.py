@@ -31,7 +31,7 @@ if __name__ == "__main__":
     args = parse_args()
     device = args.device
     filename = args.input
-    filepath = f'test_input\{filename}'
+    filepath = f'test_input/{filename}'
     name = strip_path_extension(filepath)+'.pt'
     aligned_face = align_face(filepath)
     my_w = e4e_projection(aligned_face, name, device).unsqueeze(0)
