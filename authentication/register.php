@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "SELECT * from users where users.email = '$email'";
     $result = $conn->query($sql);
 
-    // !
-    //  ! IF USER already REGISTERED  
-    // !
+    //!
+    //! IF USER already REGISTERED  
+    //!
 
     if ($result->num_rows != 0)
         echo "email already registered, choose another email ";
@@ -59,6 +59,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail->SetFrom("selfiestyliser@gmail.com");
 
     $mail->Subject = "OTP";
+
+    
 
     // generating the otp code 
 
