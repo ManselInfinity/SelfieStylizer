@@ -2,13 +2,13 @@ import torch
 from torchvision import transforms, utils
 from util import *
 # from PIL import Image
-import math
-import random
+# import math
+# import random
 import os
 import argparse
 
 # import numpy as np
-from torch import nn, autograd, optim
+# from torch import nn, autograd, optim
 from torch.nn import functional as F
 # from tqdm import tqdm
 from model import *
@@ -28,6 +28,7 @@ def parse_args():
 
 
 if __name__ == "__main__":
+    print('hello from python')
     args = parse_args()
     device = args.device
     filename = args.input

@@ -1,19 +1,24 @@
-<?php
+ <?php
 
 
 // args list: arg1: style
 // acceptable values: "art", "arcane_caitlyn", "arcane_jinx", "disney", "jojo", "jojo_yasuho", "sketch_multi"
-$style = "arcane_jinx";
+// $style = "arcane_jinx";
+echo '<pre>';
 
-$command = "python -u /Applications/XAMPP/xamppfiles/htdocs/SelfieStylizer/stylise/evaluate.py";
-//--model_name $style
+$command = 'source env/bin/activate; python evaluate.py';
 
-exec($command, $output);
-var_dump($output);
-
-
-echo $str_output;
-echo "hello";
+$output = null;
+$retval = null;
 
 
-?>
+exec($command, $output, $retval);
+
+//todo remove before deploy
+echo "Returned with status $retval and output:\n";
+print_r($output);
+
+
+echo '</pre>';
+?> 
+
