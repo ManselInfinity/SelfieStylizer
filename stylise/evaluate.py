@@ -19,7 +19,7 @@ from copy import deepcopy
 def parse_args():
     parser = argparse.ArgumentParser() 
     parser.add_argument("--device", default="cpu", help="device")
-    parser.add_argument("--input", default="iu.jpeg", help="input image")
+    parser.add_argument("--input", default="sah.jpg", help="input image")
     parser.add_argument("--model_name", default="jojo", help="model")
     parser.add_argument("--n_sample", default="5", help="n_sample")
     parser.add_argument("--seed", default="3000", help="seed")

@@ -20,9 +20,20 @@
                 format without any quality loss.</p>
 
             <h1>Upload an Image</h1>
-            <input type="file" id="fileInput" accept="image/*">
-            <label for="fileInput" id="uploadButton">Select Image</label>
-            <div id="imagePreview"></div>
+            <form action="./../imageTest/upload.php" method="post" enctype="multipart/form-data">
+                <!-- 
+                <label>Select Image File:</label>
+                <input type="file" name="image"> -->
+
+
+
+
+                <input type="file" id="fileInput" accept="image/*" name="image">
+                <label for="fileInput" id="uploadButton">Select Image</label>
+                <div id="imagePreview"></div>
+                <input type="submit" name="submit" value="Upload">
+
+            </form>
             <script src="h.js"></script>
 </body>
 
