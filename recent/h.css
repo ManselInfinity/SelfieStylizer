@@ -1,5 +1,103 @@
         body {
-            background-color: aliceblue;
+            background-color: #020f16;
+
+
+        }
+
+        .a {
+            position: absolute;
+            top: 10%;
+            left: 4%;
+            color: #fff;
+            text-align: center;
+
+        }
+
+        .u {
+            border: 2px solid rgba(255, 255, 255, .5);
+            border-radius: 20px;
+            border-style: dotted;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        }
+
+        .img {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+        }
+
+        .l {
+            position: absolute;
+            top: 100%;
+            left: 33%;
+
+            color: wheat;
+        }
+
+
+
+        .p {
+            position: absolute;
+            top: 120%;
+            left: 15%;
+            color: #fff;
+            font-size: 29px;
+        }
+
+        .i {
+            position: absolute;
+            top: 110%;
+            left: 65%;
+        }
+
+        .q {
+            position: absolute;
+            top: 175%;
+            left: 15%;
+        }
+
+        .x1 {
+            position: absolute;
+            top: 175%;
+            left: 65%;
+            color: #fff;
+            font-size: 29px;
+        }
+
+        .x2 {
+            position: absolute;
+            top: 240%;
+            left: 15%;
+            color: #fff;
+            font-size: 29px;
+        }
+
+        .q2 {
+            position: absolute;
+            top: 240%;
+            left: 65%;
+        }
+
+        .q3 {
+            position: absolute;
+            top: 305%;
+            left: 15%;
+        }
+
+        .x3 {
+            position: absolute;
+            top: 305%;
+            left: 65%;
+            color: #fff;
+            font-size: 29px;
+        }
+
+        .z {
+            color: #307caf;
+            backdrop-filter: blur(10px);
+
+
         }
 
         #fileInput {
