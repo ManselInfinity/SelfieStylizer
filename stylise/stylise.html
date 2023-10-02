@@ -44,7 +44,10 @@
                     border: 2px solid rgb(96, 111, 160);
                     border-radius: 20px;
                     backdrop-filter: blur(10px);
-                    box-shadow: 0 0 30px rgba(0, 0, 0, .5);">
+                    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+                    justify-content: center;
+                    align-items: center;
+                    ">
 
             <!-- acceptable values for style: "art", "arcane_caitlyn", "arcane_jinx", "disney", "jojo", "jojo_yasuho", "sketch_multi" -->
             <form action="stylise.php" method="post" enctype="multipart/form-data">
@@ -72,15 +75,53 @@
                 <br>
 
                 <label for="img" class="button">
-                    Choose Image </label>
+                    Select Image </label>
 
-                <input type="file" name="image" id="img" style=" width: 0.1px;
+                <input type="file" accept="image/*" name="image" id="img" style=" width: 0.1px;
                                                                 height: 0.1px;
                                                                 opacity: 0;
                                                                 overflow: hidden;
                                                                 position: absolute;
                                                                 z-index: -1;">
                 <input type="submit" name="submit" value="Upload" class="frm">
+
+                <br>
+
+                <h1 style="color: rgb(229, 235, 241);
+                           font-size: 1em;">Preview:</h1>
+                <br>
+
+                <script>
+                    // JavaScript to display a preview of the selected image
+                    const fileInput = document.getElementById("img");
+                    const imagePreview = document.getElementById("imagePreview");
+
+                    fileInput.addEventListener("change", function () {
+                        const file = fileInput.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                const img = document.createElement("img");
+                                img.src = e.target.result;
+                                img.style.maxWidth = "90%";
+                                img.style.maxHeight = "500px"; // Limit the image size for display
+                                img.style.borderWidth = "5px";
+                                img.style.borderRadius = "10px";
+                                img.style.borderColor = "96, 111, 160";
+
+                                // Clear any previous image previews
+                                while (imagePreview.firstChild) {
+                                    imagePreview.removeChild(imagePreview.firstChild);
+                                }
+
+                                imagePreview.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                </script>
 
 
 
