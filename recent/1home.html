@@ -4,145 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="home.css">
-
 </head>
 
 <body>
-    <header>
-        <!-- <h2 class="logo">logo</h2>
-        <nav class="navigation">
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">contact us</a>
-            <a href="#">tutorial</a>
-            <button class="btnlogin-popup">login</button>
-        </nav> -->
-        <div class="l">
-        </div>
-        <div class="col">
-        </div>
-        <div class="contain">
-            <h2>VISUALISE YOURSELF AS AN ANIME CHARACTER</h2>
-        </div>
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="#">HOME</a></li><br><br>
-                <li><a href="#">CREATE</a></li><br><br>
-                <li><a href="#">TUTORIAL</a></li><br><br>
-                <li><a href="#">ABOUT US</a></li><br><br>
-                <li><button class="btnlogin-popup">LOGIN</button></li>
-            </ul>
-        </div>
-    </header>
-    <div class="wrapper">
-        <span class="icon-close">
-            <ion-icon name="close"></ion-icon>
+    <h1 class="h">Welcome to Our Webpage</h1>
+    <div class="image-gallery">
+        <img src="i1.webp" alt="Image 1" class="gallery-image" onclick="showImage('i1.webp')">
 
-        </span>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="authentication/signIn.php" method="post">
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required name="email">
-                    <label>Email</label>
-                </div>
-
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="password" required name="password">
-                    <label>Password</label>
-                </div>
-                <div class="remember-forget">
-                    <label><input type="checkbox">remember me</label>
-                    <a href="#">forgot password</a>
-                </div>
-                <button type="submit" class="btn">LOGIN</button>
-                <div class="login-register">
-                    <p>Dont have an account?<a href="#" class="register-link">Register</a> </p>
-                </div>
-            </form>
-        </div>
-
-        <div class="form-box register">
-            <h2>Registration</h2>
-
-            <form action="authentication/register.php" method="post">
-                <!-- <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="person"></ion-icon></span>
-                <input type="text"required name="">
-                <label>Username</label>
-            </div> -->
-
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required name="email">
-                    <label>Email</label>
-                </div>
-
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <!-- CHANGE PASSWORD LENGTH LATER, maybe, Idk -->
-                    <input type="password" name="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}"
-                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 3 or more characters"
-                        required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forget">
-                    <label><input type="checkbox" required>I agree to the terms and conditions</label>
-
-                </div>
-                <button type="submit" class="btn">REGISTER</button>
-                <div class="login-register">
-                    <p>already have an account?<a href="#" class="login-link">Login</a> </p>
-                </div>
-
-
-
-            </form>
-
-            <div id="message">
-                <h3>Password must contain the following:</h3>
-                <h1 id="letter" class="invalid">A <b>lowercase</b> letter</h1>
-                <h1 id="capital" class="invalid">A <b>capital (uppercase)</b> letter</h1>
-                <h1 id="number" class="invalid">A <b>number</b></h1>
-                <h1 id="length" class="invalid">Minimum <b>8 characters</b></h1>
-            </div>
-
-
-            <!-- <div class="form-box register">
-            <h2>Registration</h2>
-            <form action="authentication\register.php" method="post">
-
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="text"required name="otp" maxlength="4">
-                    <label>enter otp</label>
-                </div>
-                <button type="submit" class="btn">SUBMIT</button>
-            </form> -->
-
-
-
-        </div>
     </div>
-
-
-
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img id="enlarged-image" class="modal-content">
+    </div>
     <script src="home.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
