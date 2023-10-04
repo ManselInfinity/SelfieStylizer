@@ -3,6 +3,7 @@
 require('./../vendor/autoload.php');
 require('./../dbConfig.php');
 
+
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
 
@@ -37,8 +38,11 @@ if (empty($_POST['razorpay_order_id']) === false) {
 
 if ($success === true) {
     //! insert data to database
+
+
     $html = "<p>Your payment was successful</p>
-             <p>Payment ID: {$_POST['razorpay_payment_id']}</p>";
+             <p>Payment ID: {$_POST['razorpay_payment_id']}</p><br>
+             credits bought = {$_SESSION['creditsPurchased']}";
 } else {
     // payment failed 
     $html = "<p>Your payment failed</p>

@@ -1,0 +1,70 @@
+body {
+    background-image: url("./../img21.webp");
+    background-color: rgba(128, 128, 128, 0.589);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.razorpay-payment-button {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(224, 230, 236);
+    background-color: rgb(39, 57, 77);
+    border-radius: 5px;
+    display: inline-block;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.razorpay-payment-button:hover {
+    background-color: rgb(47, 74, 105);
+}
+
+
+.frm {
+    background-color: rgb(37, 41, 65);
+    border-radius: 5%;
+    border-color: rgb(85, 98, 141);
+    color: #daeaf1;
+}
+
+.outerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.innerDiv {
+    background: rgba(1, 16, 29, 0.699);
+    padding: 30px;
+    border: 2px solid rgb(96, 111, 160);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.innerDivHover {
+    background: rgba(1, 16, 29, 0.699);
+    padding: 30px;
+    border: 2px solid rgb(96, 111, 160);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDivHover:hover {
+    background: rgba(1, 28, 53, 0.772);
+}
+
+h1 {
+    color: #daeaf1;
+}
