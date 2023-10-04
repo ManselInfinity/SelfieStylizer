@@ -104,7 +104,7 @@ body {
 
 .form-box h2 {
     font-size: 2em;
-    color: black;
+    color: rgb(241, 234, 234);
     text-align: center;
 
 }
@@ -123,7 +123,7 @@ body {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: black;
+    color: rgb(238, 233, 233);
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -142,7 +142,7 @@ body {
     border: none;
     outline: none;
     font-size: 1em;
-    color: black;
+    color: rgb(240, 236, 236);
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -151,7 +151,7 @@ body {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: black;
+    color: rgb(252, 247, 247);
     line-height: 57px;
 
 }
@@ -159,7 +159,7 @@ body {
 
 .remember-forget {
     font-size: .9em;
-    color: black;
+    color: rgb(230, 226, 226);
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -167,7 +167,7 @@ body {
 }
 
 .remember-forget a {
-    color: black;
+    color: rgb(231, 225, 225);
     text-decoration: none;
 }
 
@@ -190,14 +190,14 @@ body {
 
 .login-register {
     font-size: .9em;
-    color: black;
+    color: rgb(247, 242, 242);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
-    color: black;
+    color: rgb(224, 223, 223);
     text-decoration: none;
     font-weight: 600;
 
@@ -301,7 +301,7 @@ body {
 #message {
     display: none;
     background: #8ba8b881;
-    color: #000;
+    color: #ebe1e1;
     position: relative;
     padding: 20px;
     margin-top: 10px;
