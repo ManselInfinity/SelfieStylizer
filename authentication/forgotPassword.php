@@ -30,6 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $cookie_value = $key;
     setcookie($cookie_name, $cookie_value, time() + (60 * 10), "/"); // expires in 10 min
 
+    setcookie("email", $email, time() + (60 * 10), "/"); // expires in 10 min
+
     // send email with redirect link
     $mail = new PHPMailer();
 
@@ -54,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $mail->Subject = "Password Reset Link";
 
 
-    $mail->Body = "The link provided below is valid for only 10 minutes:<br>><a href='http://localhost/SelfieStylizer/authentication/resetPassword.php?email=$email&?key=$key'>Click to reset Password</a>";
+    $mail->Body = "The link provided below is valid for only 10 minutes:<br>><a href='http://localhost/SelfieStylizer/authentication/resetPassword.php?key=$key'>Click to reset Password</a>";
 
     $mail->AddAddress($email);
 
