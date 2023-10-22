@@ -18,7 +18,7 @@ if (isset($_POST["submit"])) {
             $imgContent = addslashes(file_get_contents($image));
 
             // Insert image content into database 
-            $insert = $conn->query("INSERT into images VALUES ('manselismyname@gmail.com', '$imgContent')");
+            $insert = $conn->query("INSERT into images ( email, image, parentId) VALUES ('manselismyname@gmail.com', '$imgContent', NULL)");
 
             if ($insert) {
                 $status = 'success';
