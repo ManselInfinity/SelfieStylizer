@@ -46,11 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     // print_r($output);
  
 
+    //-------------------------------- image saving and stuff-----------------------------------------------------
+
     // getting the parent and converted images 
     $parentImage = addslashes($imageData);
 
     $imageFilePath = './results/temp.png';
-
 
     if ( !file_exists($imageFilePath) ) {
         //! do something more here
@@ -91,8 +92,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     } else {
         $statusMsg = "File upload failed, please try again.";
     }
+    
 
-    // clearing the temp folders 
+    
+    //-------------------------------- clearing the temp folders ------------------------------------- 
 
     $files = glob('./temp/*'); // get all file names
     foreach($files as $file){ // iterate files
@@ -104,7 +107,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     file_put_contents('./temp/DontDeleteThis.txt', "");
     unlink('./results/temp.png');
 
+    //--------------------------------- do whatever now ---------------------------------------
 
+    
     header("Location:./display.php");
 
 }
