@@ -3,7 +3,9 @@
 require_once './../dbConfig.php';
 
 // Get image data from database ,
-$query = "select images.image as parent, tab.image as child from (select * from images where id is null) as tab, images where images.parentId is null and tab.parentId = images.id";
+// select the parent and converted image, 
+// at random, and limited to 3 at most
+$query = "select images.image as parent, tab.image as child from (select * from images where id is null) as tab, images where images.parentId is null and tab.parentId = images.id order by rand() limit 3";
 $result = $conn->query($query);
 
 $i = 1;
@@ -21,6 +23,22 @@ $nImages = $result->num_rows;
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
+<header>
+        <div class="l">
+        </div>
+        
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li><br><br>
+                <li><a href="./../stylise/stylise.html">Stylise</a></li><br><br>
+                <li><a href="#">Tutorial</a></li><br><br>
+                <li><a href="#">About Us</a></li><br><br>
+            </ul>
+        </div>
+    </header>
+
+
+
     <!-- Slideshow container -->
     <div class="outerDiv">
         <div class="innerDiv"> 
@@ -32,10 +50,10 @@ $nImages = $result->num_rows;
                     <div class="mySlides fade">
                         <div class="numbertext"><?php echo $i ?> / <?php echo $nImages ?></div>
                         <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['parent']); ?>" style="width:48%; border-radius: 3%;     
-                                                                                                                          border: 2px solid rgb(96, 111, 160);" alt="img">
-                         ⇒ 
+                                                                                                                          border: 2px solid rgba(30, 90, 168, 0.942);" alt="img">
+                        <!-- <h1 style="color: white; font-size: 1em;"> ⇒ </h1>  -->
                         <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['child']); ?>" style="width:48%; border-radius: 3%;    
-                                                                                                                         border: 2px solid rgb(96, 111, 160);" alt="img">
+                                                                                                                         border: 2px solid rgba(29, 109, 143, 0.942);" alt="img">
                       
                     </div>
                 <?php $i++; } ?>    

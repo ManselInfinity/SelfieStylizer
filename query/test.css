@@ -9,6 +9,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+
+    margin: auto;
 
 }
 
@@ -16,8 +22,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%;
-    margin: 6%;
+    height: 50%;
+    width: 75%;
+    margin: 3%;
 }
 
 .innerDiv {
@@ -74,7 +81,7 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(6, 31, 69, 0.718);
 }
 
 /* Caption text */
@@ -133,4 +140,90 @@ body {
     to {
         opacity: 1
     }
+}
+
+.l {
+    position: absolute;
+    top: -5%;
+    left: -2%;
+    height: 84%;
+    border: 2px solid #eaedee;
+    width: 13%;
+    padding: 5%;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 8.9);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.navbar li a {
+    position: absolute;
+    left: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f7f7f7;
+    padding: 0px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: #689cb4;
+}
+
+.contain {
+    position: absolute;
+    font-weight: bold;
+    left: 128px;
+    top: 75%;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    /* border: 2px solid rgb(248, 244, 244);*/
+    color: #f2f7fa;
+
+}
+
+.mid {
+    display: inline-block;
+    width: 10%;
+    /*border:2px solid rgb(245, 240, 240);*/
+    position: absolute;
+    left: 0%;
+    font-size: 30px;
+    padding: 1%;
+    top: 12px;
+    color: blue;
+}
+
+.navbar {
+    color: rgb(71, 69, 69);
+    list-style: none;
+
+}
+
+.btnlogin-popup {
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+    font-size: 20px;
+    font-weight: 900;
+    color: #eff1f1;
+    padding: 10%;
+    background-image: url(img11.png);
+    border: 2px solid #dfe5e7;
+    border-radius: 25%;
+    background: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.btnlogin-popup:hover {
+    color: #689cb4;
 }
