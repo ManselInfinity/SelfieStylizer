@@ -23,7 +23,7 @@ $result = $conn->query("SELECT image FROM images");
             <div class="gallery">
                 <?php while ($row = $result->fetch_assoc()) { ?>
                     <br>
-                    <img style="max-width: 350px; max-height: 250px" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
+                    <img style="max-width: 250; max-height: 300" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
                     <br>
                 <?php } ?>
             </div>
