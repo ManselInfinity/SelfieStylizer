@@ -45,4 +45,12 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database table 'images': " . $conn->error;
 }
 
+$sql = "CREATE TABLE socialGallery (email varchar(50), image LONGBLOB, FOREIGN KEY (email) REFERENCES users(email), userName varchar(50), style varchar(30)); ";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Database table 'socialGallery' created successfully";
+} else {
+    echo "Error creating database table 'images': " . $conn->error;
+}
+
 ?>

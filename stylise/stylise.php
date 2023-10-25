@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     
     $style = $_POST['style'];
+    $_SESSION['style'] = $style;
 
     // Directory to save images
     $uploadDirectory = 'temp/';

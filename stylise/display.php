@@ -1,10 +1,19 @@
 <?php
 
+require_once './../dbConfig.php';
+
 session_start();
 
 $imageData = $_SESSION['image'];
+$email = $_SESSION['email'];
+$style = $_SESSION['style'];
 
-unset($_SESSION['image']);
+$result = $conn->query("select userName from users where email = '$email';");
+$row = $result->fetch_assoc();
+
+$userName = $row['userName'];
+
+// unset($_SESSION['image']);
 
 // Convert the image data to base64
 $base64Image = base64_encode($imageData);
@@ -49,9 +58,36 @@ $base64Image = base64_encode($imageData);
                                                                                                 border: 2px solid rgba(30, 90, 168, 0.942);">
                 
                 <br>
+                
+                <?php
+      
+                    if(isset($_POST['button1'])) 
+                    {
+                        $convertedImage = addslashes($imageData);
+
+                        $insert = $conn->query("INSERT into socialGallery (email, image, userName, style) VALUES ('$email', '$convertedImage', '$userName', '$style');");
+
+                        //todo remove before deploy maybe 
+                        if ($insert) {
+                            $status = 'success';
+                            $statusMsg = "parent image uploaded successfully.";
+                        } else {
+                            $statusMsg = "File upload failed, please try again.";
+                        }
+
+                    echo "<script> alert('Image Uploaded Successfully');</script>";
+                    } 
+                ?> 
+    
+                <form method="post"> 
+                    <input type="submit" value="Upload To S-Gallery"
+                            name="button1" class="innerDivHover" style="color:aliceblue;"> 
+                </form> 
+                
+                
                 <a href="data:image/jpeg;base64,<?php echo $base64Image; ?>" download="ConvertedImage" style="text-decoration: none;">
                     <div class="innerDivHover">
-                        <div style="color: ivory"> Download Image ↓</div>
+                        <div style="color:aliceblue"> Download Image ↓</div>
                     </div>
                 </a>
     </div>
