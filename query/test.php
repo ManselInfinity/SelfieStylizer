@@ -2,10 +2,13 @@
 // Include the database configuration file  
 require_once './../dbConfig.php';
 
+session_start();
+
 // Get image data from database ,
 // select the parent and converted image, 
 // at random, and limited to 3 at most
-$query = "select images.image as parent, tab.image as child from (select * from images where id is null) as tab, images where images.parentId is null and tab.parentId = images.id order by rand() limit 3";
+$email = $_SESSION['email'];
+$query = "select images.image as parent, tab.image as child from (select * from images where id is null and email = '$email') as tab, images where images.parentId is null and tab.parentId = images.id and images.email = '$email' order by rand() limit 3";
 $result = $conn->query($query);
 
 $i = 1;

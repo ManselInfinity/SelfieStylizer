@@ -6,6 +6,30 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     
+    $email = $_SESSION['email'];
+
+    // checking if the user has enough credits
+    $query = "select credits from users where email = '$email'";
+    $result = $conn->query($query);
+
+    if($result->num_rows != 1) 
+    {
+        echo "too many users somehow, with the same email";
+        die();
+    }
+
+    $row = $result->fetch_assoc();
+    $credits = $row['credits'];
+
+    if($credits < 10)
+    {
+        // if credits are not enough, redirect to payment page
+        echo "<script>alert('Out of credits, buy more first');
+                      window.location.replace('http://localhost/SelfieStylizer/payment/pay.html');</script>";
+        die();
+    }
+
+    
     $style = $_POST['style'];
 
     // Directory to save images
@@ -61,15 +85,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 
     // Read the image data
-    $convertedImage = addslashes(file_get_contents($imageFilePath));
+    $cnvImage = file_get_contents($imageFilePath);
+    $convertedImage = addslashes($cnvImage);
 
     // generate a unique id for the image 
     $parentId = uniqid();
 
-    $email = $_SESSION['email'];
 
-    //! remove before deploy
-    $email = 'manselismyname@gmail.com';
+
+  
+    // $email = 'manselismyname@gmail.com';
 
     // Insert parent image into database 
     $insert = $conn->query("INSERT into images (id, email, image, parentId) VALUES ('$parentId', '$email', '$parentImage', NULL)");
@@ -93,8 +118,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $statusMsg = "File upload failed, please try again.";
     }
     
+    // deducting the credits appropriately 
+    // deduct 10 credits per image converted
+    $credits -= 10;
+
+    $query = "update users set credits = $credits where email = '$email'";
+    $result = $conn->query($query);
 
     
+
     //-------------------------------- clearing the temp folders ------------------------------------- 
 
     $files = glob('./temp/*'); // get all file names
@@ -109,6 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     //--------------------------------- do whatever now ---------------------------------------
 
+    $_SESSION['image'] = $cnvImage;
     
     header("Location:./display.php");
 
