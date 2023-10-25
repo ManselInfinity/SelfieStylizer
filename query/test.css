@@ -227,3 +227,9 @@ body {
 .btnlogin-popup:hover {
     color: #689cb4;
 }
+
+.header {
+    position: static;
+    top: 0px;
+    left: 0px;
+}
