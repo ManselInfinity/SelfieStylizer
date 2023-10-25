@@ -17,5 +17,5 @@
 
 echo PHP_OS_FAMILY;
 echo "hello<br>";
-echo PHP_OS;
+echo $_SESSION['email'];
 ?>

@@ -322,3 +322,42 @@ body {
 .invalid {
     color: red;
 }
+
+.outerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.innerDiv {
+    background: rgba(1, 16, 29, 0.699);
+    padding: 30px;
+    border: 2px solid rgb(96, 111, 160);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.innerDivHover {
+    background: rgba(1, 16, 29, 0.699);
+    padding: 30px;
+    border: 2px solid rgb(96, 111, 160);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDivHover:hover {
+    background: rgba(1, 28, 53, 0.772);
+}
+
+h1 {
+    color: #daeaf1;
+}

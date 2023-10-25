@@ -15,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // otp verified, redirect to user landing page
         echo "otp verified";
         //! redirect here maybe 
+
+
         header("Location: otpRedirect.html");
     }
 }

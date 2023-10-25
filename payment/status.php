@@ -39,14 +39,51 @@ if (empty($_POST['razorpay_order_id']) === false) {
 if ($success === true) {
     //! insert data to database
 
+    // if(!isset($_COOKIE['email']))
+    // {
+    //     // no user signed in
+    //     echo "you dont belong here <br>";
+    //     echo $_SESSION['email'];
+    //     echo $_COOKIE['email'];
+    //     die();
+    // }
 
-    $html = "<p>Your payment was successful</p>
-             <p>Payment ID: {$_POST['razorpay_payment_id']}</p><br>
-             credits bought = {$_SESSION['creditsPurchased']}";
+    $email = $_SESSION['email'];
+
+    // if(!$email)
+    // {
+    //     //! do something here maybe
+    //     echo "no email, huh?";
+    //     die();
+    // }
+
+    $query = "select credits from users where email = '$email'";
+    $result = $conn->query($query);
+
+    if($result->num_rows != 1) 
+    {
+        echo "too many users somehow, with the same email";
+        die();
+    }
+
+    $row = $result->fetch_assoc();
+    $newCredits = $row['credits'];
+
+    $newCredits += $_SESSION['creditsPurchased'];
+
+    $query = "update users set credits = $newCredits where email = '$email'";
+    $result = $conn->query($query);
+
+    
+    // $html = "<p>Your payment was successful</p>
+    //          <p>Payment ID: {$_POST['razorpay_payment_id']}</p><br>
+    //          credits bought = {$_SESSION['creditsPurchased']}";
 } else {
     // payment failed 
-    $html = "<p>Your payment failed</p>
-             <p>{$error}</p>";
+    echo "payment failed";
+    die();
+    // $html = "<p>Your payment failed</p>
+    //          <p>{$error}</p>";
 }
 
-echo $html;
+header("Location:./redirect.html");

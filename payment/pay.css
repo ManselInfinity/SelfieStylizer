@@ -68,3 +68,55 @@ body {
 h1 {
     color: #daeaf1;
 }
+
+.l {
+    position: absolute;
+    top: -5%;
+    left: -2%;
+    height: 84%;
+    border: 2px solid #eaedee;
+    width: 5%;
+    padding: 5%;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 8.9);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.mid {
+    display: inline-block;
+    width: 10%;
+    /*border:2px solid rgb(245, 240, 240);*/
+    position: absolute;
+    left: 0%;
+    font-size: 30px;
+    padding: 1%;
+    top: 12px;
+    color: blue;
+}
+
+.navbar {
+    color: rgb(71, 69, 69);
+    list-style: none;
+
+}
+
+.navbar li a {
+    position: absolute;
+    left: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f7f7f7;
+    padding: 0px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: #689cb4;
+}
