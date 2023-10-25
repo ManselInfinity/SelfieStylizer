@@ -12,6 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $username = $_POST['username'];
 
     echo "hello";
 
@@ -32,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100)";
+    $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100,'$username')";
     $conn->query($sql);
 
     //sending otp mail :
@@ -60,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $mail->Subject = "OTP";
 
-    
+
 
     // generating the otp code 
 
