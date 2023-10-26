@@ -43,6 +43,7 @@ $nImages = $result->num_rows;
             <ul class="navbar">
                 <li><a href="">Home</a></li><br><br>
                 <li><a href="./../stylise/stylise.html">Stylise</a></li><br><br>
+                <li><a href="./../socialGallery/social.php">S-Gallery</a></li><br><br>
                 <li><a href="./../extraPages/tutorial.html">Tutorial</a></li><br><br>
                 <li><a href="./../payment/pay.html">Pay</a></li><br><br>
                 <li><a href="./../extraPages/aboutUs.html">About Us</a></li><br><br>
