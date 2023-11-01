@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("./../img21.webp");
+    background-image: url("./../resources/img21.webp");
     background-color: rgba(128, 128, 128, 0.589);
     background-blend-mode: multiply;
     background-size: cover;

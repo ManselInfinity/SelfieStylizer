@@ -1,7 +1,7 @@
 <?php
 
 require('./../vendor/autoload.php');
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //! redirect to otp verification page:
 
 
-        header("Location:./../otp1.html");
+        header("Location:./otp1.html");
 
 
 

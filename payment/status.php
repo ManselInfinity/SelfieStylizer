@@ -1,7 +1,7 @@
 <?php
 
 require('./../vendor/autoload.php');
-require('./../dbConfig.php');
+require('./../resources/dbConfig.php');
 
 
 use Razorpay\Api\Api;

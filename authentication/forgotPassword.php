@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 require('./../vendor/autoload.php');
 
 use PHPMailer\PHPMailer\PHPMailer;

@@ -1,6 +1,6 @@
 <?php
 // Include the database configuration file  
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 session_start();
 
@@ -34,8 +34,9 @@ $nImages = $result->num_rows;
         
         <div class="mid">
             <ul class="navbar">
-                <li><a href="./../query/test.php">Home</a></li><br><br>
+                <li><a href="./../home/home.php">Home</a></li><br><br>
                 <li><a href="./../stylise/stylise.html">Stylise</a></li><br><br>
+                <li><a href="">S-Gallery</a></li><br><br>
                 <li><a href="./../extraPages/tutorial.html">Tutorial</a></li><br><br>
                 <li><a href="./../payment/pay.html">Pay</a></li><br><br>
                 <li><a href="./../extraPages/aboutUs.html">About Us</a></li><br><br>

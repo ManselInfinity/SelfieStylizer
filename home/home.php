@@ -1,6 +1,6 @@
 <?php
 // Include the database configuration file  
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 session_start();
 
@@ -30,7 +30,7 @@ $nImages = $result->num_rows;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     
@@ -114,7 +114,7 @@ $nImages = $result->num_rows;
     </div>
 
     
-    <script src="test.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
 

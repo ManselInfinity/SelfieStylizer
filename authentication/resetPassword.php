@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' and isset($_COOKIE['key']))
 {

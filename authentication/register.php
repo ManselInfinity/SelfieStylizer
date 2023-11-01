@@ -1,7 +1,7 @@
 <?php
 
 require('./../vendor/autoload.php');
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 echo "hello";
 
@@ -20,13 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "SELECT * from users where users.email = '$email'";
     $result = $conn->query($sql);
 
-    //!
-    //! IF USER already REGISTERED  
-    //!
-
+    // if the user already exists in the database
     if ($result->num_rows != 0)
-        echo "email already registered, choose another email ";
-    // do something 
+        echo "<script>alert('email already registered, choose another email'); </script> ";
 
 
     // hashing entered password 
@@ -84,9 +80,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Message has been sent";
     }
 
-    //! redirect to otp page now
-
-    // header("Location:.\..\model6.html");
-
-    header("Location:./../otp1.html");
+    header("Location:./otp1.html");
 }

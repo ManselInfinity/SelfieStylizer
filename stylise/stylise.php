@@ -1,6 +1,6 @@
 <?php
 
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST')

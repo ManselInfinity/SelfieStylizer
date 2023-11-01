@@ -44,8 +44,9 @@ $base64Image = base64_encode($imageData);
         </div>
         <div class="mid">
             <ul class="navbar">
-                <li><a href="./../query/test.php">Home</a></li><br><br>
+                <li><a href="./../home/home.php">Home</a></li><br><br>
                 <li><a href="./stylise.html">Stylise</a></li><br><br>
+                <li><a href="./../socialGallery/social.php">S-Gallery</a></li><br><br>
                 <li><a href="./../extraPages/tutorial.html">Tutorial</a></li><br><br>
                 <li><a href="./../extraPages/aboutUs.html">About Us</a></li><br><br>
             </ul>

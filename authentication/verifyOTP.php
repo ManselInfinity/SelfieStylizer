@@ -17,6 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //! redirect here maybe 
 
 
-        header("Location: otpRedirect.html");
+        header("Location:./otpRedirect.html");
+    }
+    else{
+        // otp incorrect
+        echo "<script> alert('Incorrect otp !'); </script>";
     }
 }

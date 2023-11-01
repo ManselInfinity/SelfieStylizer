@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url(img21.webp);
+  background-image: url(./../resources/img21.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
