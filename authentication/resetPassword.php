@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' and isset($_COOKIE['key']))
         
         ?>
             
-            <body style="background: url('./../img21.webp');
+            <body style="background: url('./../resources/img21.webp');
                         background-color: rgba(128, 128, 128, 0.589);
                         background-blend-mode: multiply;
                         background-size: cover;
