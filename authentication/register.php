@@ -3,7 +3,6 @@
 require('./../vendor/autoload.php');
 require_once './../resources/dbConfig.php';
 
-echo "hello";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -16,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $username = $_POST['username'];
 
-    echo "hello";
 
 
     $sql = "SELECT * from users where users.email = '$email'";
@@ -48,10 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
 
-    echo "hi";
 
     //todo  remove debug before deploying
-    $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
 
     $mail->IsHTML(true);
     $mail->Username = "selfiestyliser@gmail.com";
@@ -71,16 +68,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail->AddAddress($email);
 
 
-    //$_SESSION['otp'] = $otp;
-    $_SESSION['otp'] = 1234 ;
+    $_SESSION['otp'] = $otp;
+    //$_SESSION['otp'] = 1234 ;
 
     //send the email and check if successful 
     //todo remove echo before deploy
-    // if (!$mail->Send()) {
-    //     echo "Mailer Error: " . $mail->ErrorInfo;
-    // } else {
-    //     echo "Message has been sent";
-    // }
+    if (!$mail->Send()) {
+        echo "<script>alert('Server Error, Sorry :(');
+                      history.back(); </script>";
+        
+    } else {
+        echo "Message has been sent";
+    }
 
-    header("Location:./otp1.html");
+    //header("Location:./otp1.html");
 }
