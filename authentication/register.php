@@ -8,6 +8,8 @@ echo "hello";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+session_start();
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
@@ -29,8 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100, '$username')";
-    $conn->query($sql);
+    $_SESSION['email'] = $email;
+    $_SESSION['hashedPassword'] = $hashedPassword;
+    $_SESSION['username'] = $username;
 
     //sending otp mail :
     $mail = new PHPMailer();
@@ -67,18 +70,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $mail->AddAddress($email);
 
-    // creating a session for the current user 
-    session_start();
-    $_SESSION['otp'] = $otp;
-    // $_SESSION['username'] = $username ;
+
+    //$_SESSION['otp'] = $otp;
+    $_SESSION['otp'] = 1234 ;
 
     //send the email and check if successful 
     //todo remove echo before deploy
-    if (!$mail->Send()) {
-        echo "Mailer Error: " . $mail->ErrorInfo;
-    } else {
-        echo "Message has been sent";
-    }
+    // if (!$mail->Send()) {
+    //     echo "Mailer Error: " . $mail->ErrorInfo;
+    // } else {
+    //     echo "Message has been sent";
+    // }
 
     header("Location:./otp1.html");
 }

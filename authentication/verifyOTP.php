@@ -1,20 +1,23 @@
 <?php
 
+require_once './../resources/dbConfig.php';
+
 session_start();
 $sessionOTP = $_SESSION['otp'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $userOTP = $_POST['otp'];
 
-    echo $userOTP;
-    echo "<br>";
-    echo $sessionOTP;
-    echo "<br>";
 
     if ($userOTP == $sessionOTP) {
-        // otp verified, redirect to user landing page
-        echo "otp verified";
-        //! redirect here maybe 
+        // otp verified, redirect to user home page
+
+        $email = $_SESSION['email'];
+        $hashedPassword = $_SESSION['hashedPassword'];
+        $username = $_SESSION['username'];
+
+        $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100, '$username')";
+        $conn->query($sql);
 
 
         header("Location:./otpRedirect.html");
