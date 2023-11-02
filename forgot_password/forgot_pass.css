@@ -5,7 +5,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family: ArcadeClassic;
+    src: url(./../resources/arcadeclassic.regular.ttf);
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;

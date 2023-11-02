@@ -9,6 +9,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    font-family: ArcadeClassic;
+    src: url(./../resources/arcadeclassic.regular.ttf);
+
     justify-content: center;
     align-items: center;
 

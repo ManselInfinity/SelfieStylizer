@@ -81,5 +81,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Message has been sent";
     }
 
-    //header("Location:./otp1.html");
+    header("Location:./otp1.html");
 }

@@ -1,5 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: ArcadeClassic;
+  src: url(./../resources/arcadeclassic.regular.ttf);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +39,8 @@ input {
 button {
   padding: 10px 20px;
   background-color: #007bff;
+  font-family: ArcadeClassic;
+  src: url(./../resources/arcadeclassic.regular.ttf);
   color: white;
   border: none;
   border-radius: 5px;

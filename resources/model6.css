@@ -9,7 +9,6 @@ body {
     background-attachment: fixed;
 
     font-family: ArcadeClassic;
-
     src: url(arcadeclassic.regular.ttf);
 
 
@@ -190,6 +189,9 @@ body {
     font-size: 1em;
     color: aliceblue;
     font-weight: 500;
+    font-family: ArcadeClassic;
+
+    src: url(arcadeclassic.regular.ttf);
 }
 
 .login-register {
@@ -217,7 +219,7 @@ body {
     left: -2%;
     height: 345%;
     border: 2px solid #eaedee;
-    width: 3%;
+    width: 8%;
     padding: 5%;
     background: transparent;
     border-radius: 20px;
@@ -234,6 +236,9 @@ body {
     position: absolute;
     bottom: -50%;
     left: 10%;
+    font-family: ArcadeClassic;
+
+    src: url(arcadeclassic.regular.ttf);
     font-size: 20px;
     font-weight: 900;
     color: #eff1f1;

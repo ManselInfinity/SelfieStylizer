@@ -39,7 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' and isset($_COOKIE['key']))
                         background-color: rgba(128, 128, 128, 0.589);
                         background-blend-mode: multiply;
                         background-size: cover;
-                        background-repeat: no-repeat;">
+                        background-repeat: no-repeat;
+                        font-family: ArcadeClassic;
+                        src: url(./../resources/arcadeclassic.regular.ttf);">
 
                 <div style="  display: flex;
                                 justify-content: center;
