@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     // Get the image data
     $imageData = file_get_contents($_FILES['image']['tmp_name']);
 
+
     // save the image as temp
     $uniqueFilename = ''. $_FILES['image']['name'];
 
