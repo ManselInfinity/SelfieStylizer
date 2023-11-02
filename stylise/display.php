@@ -1,6 +1,6 @@
 <?php
 
-require_once './../dbConfig.php';
+require_once './../resources/dbConfig.php';
 
 session_start();
 
@@ -27,7 +27,7 @@ $base64Image = base64_encode($imageData);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converted Image</title>
-    <link rel="stylesheet" href="./../model6.css">
+    <link rel="stylesheet" href="./../resources/model6.css">
 </head>
 
 <body>
