@@ -1,7 +1,7 @@
 # SelfieStylizer
 
 install https://getcomposer.org/download/
-run following commmand inside proect directory 
+run following commmand inside project directory 
 
 ```
 composer require phpmailer/phpmailer
