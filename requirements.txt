@@ -1,3 +1,5 @@
+torch
+dlib
 tqdm
 gdown
 scikit-learn
