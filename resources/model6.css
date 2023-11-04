@@ -395,3 +395,26 @@ h1 {
 .button:hover {
     background-color: rgb(47, 74, 105);
 }
+
+.loader {
+    position: relative;
+    left: 44%;
+    border: 9px solid #697e96;
+    /* Light grey */
+    border-top: 16px solid #3471dbf9;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
