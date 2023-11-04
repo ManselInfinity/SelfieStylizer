@@ -1,147 +1,147 @@
-        body {
-            background-color: #020f16;
-            background-image: url(img21.webp);
-            background-color: rgba(128, 128, 128, 0.589);
-            background-blend-mode: multiply;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+body {
+    background-color: #020f16;
+    background-image: url(img21.webp);
+    background-color: rgba(128, 128, 128, 0.589);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 
-        }
+}
 
-        .a {
-            position: absolute;
-            top: 45%;
-            left: 14%;
-            color: #fff;
-            text-align: center;
-
-
-        }
-
-        .con {
-            background: transparent;
-            font-family: Griffy;
-
-            backdrop-filter: blur(10px);
-        }
-
-        .b,
-        .h {
-            background: transparent;
+.a {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: #fff;
+    text-align: center;
 
 
-            backdrop-filter: blur(10px);
-        }
-        .b{
-            font-family: Griffy;
-        }
+}
+
+.con {
+    background: transparent;
+    font-family: Griffy;
+
+    backdrop-filter: blur(10px);
+}
+
+.b,
+.h {
+    background: transparent;
 
 
-
-        .v {
-            position: absolute;
-            top: 100%;
-            left: 33%;
-            font-family: Griffy;
-            color: wheat;
-            background: transparent;
-
-
-            backdrop-filter: blur(10px);
-        }
+    backdrop-filter: blur(10px);
+}
+.b{
+    font-family: Griffy;
+}
 
 
 
-        .p {
-            position: absolute;
-            top: 120%;
-            left: 15%;
-            color: #fff;
-            font-size: 29px;
-            background: transparent;
+.v {
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    font-family: Griffy;
+    color: wheat;
+    background: transparent;
 
 
-            backdrop-filter: blur(10px);
-        }
-
-        .i {
-            position: absolute;
-            top: 110%;
-            left: 65%;
-        }
-
-        .q {
-            position: absolute;
-            top: 175%;
-            left: 15%;
-        }
-
-        .x1 {
-            position: absolute;
-            top: 175%;
-            left: 65%;
-            color: #fff;
-            font-size: 29px;
-            background: transparent;
+    backdrop-filter: blur(10px);
+}
 
 
-            backdrop-filter: blur(10px);
 
-        }
-
-        .x2 {
-            position: absolute;
-            top: 240%;
-            left: 15%;
-            color: #fff;
-            font-size: 29px;
-            background: transparent;
+.p {
+    position: absolute;
+    top: 120%;
+    left: 18%;
+    color: #fff;
+    font-size: 29px;
+    background: transparent;
 
 
-            backdrop-filter: blur(10px);
-        }
+    backdrop-filter: blur(10px);
+}
 
-        .q2 {
-            position: absolute;
-            top: 240%;
-            left: 65%;
-        }
+.i {
+    position: absolute;
+    top: 110%;
+    left: 65%;
+}
 
-        .q3 {
-            position: absolute;
-            top: 305%;
-            left: 15%;
-        }
+.q {
+    position: absolute;
+    top: 175%;
+    left: 18%;
+}
 
-        .x3 {
-            position: absolute;
-            top: 305%;
-            left: 65%;
-            color: #fff;
-            font-size: 29px;
-            background: transparent;
-
-
-            backdrop-filter: blur(10px);
-        }
-
-        .z {
-            color: #307caf;
-            backdrop-filter: blur(10px);
+.x1 {
+    position: absolute;
+    top: 175%;
+    left: 65%;
+    color: #fff;
+    font-size: 29px;
+    background: transparent;
 
 
-        }
+    backdrop-filter: blur(10px);
 
-        #fileInput {
-            display: none;
+}
 
-        }
+.x2 {
+    position: absolute;
+    top: 240%;
+    left: 18%;
+    color: #fff;
+    font-size: 29px;
+    background: transparent;
 
-        #uploadButton {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            cursor: pointer;
-        }
+
+    backdrop-filter: blur(10px);
+}
+
+.q2 {
+    position: absolute;
+    top: 240%;
+    left: 65%;
+}
+
+.q3 {
+    position: absolute;
+    top: 305%;
+    left: 18%;
+}
+
+.x3 {
+    position: absolute;
+    top: 305%;
+    left: 65%;
+    color: #fff;
+    font-size: 29px;
+    background: transparent;
+
+
+    backdrop-filter: blur(10px);
+}
+
+.z {
+    color: #307caf;
+    backdrop-filter: blur(10px);
+
+
+}
+
+#fileInput {
+    display: none;
+
+}
+
+#uploadButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}

@@ -10,7 +10,6 @@ body {
 
     font-family: ArcadeClassic;
     src: url(arcadeclassic.regular.ttf);
-    word-spacing: 10px;
 
 
     /* background-color: #000011;*/
@@ -352,9 +351,9 @@ body {
 
 .text{
     white-space: nowrap;
-   
-    
-    border: solid 1px black;
+   text-decoration: underline;
+/*     
+    border: solid 1px black; */
     border-radius: 25%;
 }
 
@@ -476,8 +475,8 @@ h1 {
     color: #daeaf1;
   }
 
-  .fa-house{
+  /* .fa-house{
     font-size: xx-large;
 
     color: #daeaf1;
-}
+  } */
