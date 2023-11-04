@@ -2,7 +2,7 @@
 
 # Before Running:
 Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing  
-Paste them in stylise/models folder.   
+Paste them in the models folder inside the stylise folder.   
      
 ER Diagram :    
 Entities:   
