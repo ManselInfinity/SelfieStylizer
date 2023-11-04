@@ -1,39 +1,40 @@
 # SelfieStylizer
 
 # Before Running:
-Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing , and paste them in stylise/models folder.
-
+Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing  
+Paste them in stylise/models folder.   
+     
 ER Diagram :
-Entities:
+Entities:   
 
-Users:
-        Attributes:
-            Email (Primary Key)
-            Password
-            Credits
-            userName 
+Users:   
+        Attributes:    
+            Email (Primary Key)    
+            Password   
+            Credits    
+            userName    
 
-Images:
-        Attributes:
-            Email (Foreign Key referencing Users)
-            Image (LONGBLOB)
-            id
-            parentID
+Images:    
+        Attributes:    
+            Email (Foreign Key referencing Users)    
+            Image (LONGBLOB)    
+            id     
+            parentID    
+ 
+S Gallery:    
+        Attributes:    
+            Email (Foreign Key referencing Users)    
+            Image (LONGBLOB)    
+            userName     
+            Style    
+      
+Relationship:    
 
-S Gallery:
-        Attributes:
-            Email (Foreign Key referencing Users)
-            Image (LONGBLOB)
-            userName
-            Style
+Users - Images Relationship:    
+        One User can have multiple Images.      
+        Each Image is associated with exactly one User.    
 
-Relationship:
-
-Users - Images Relationship:
-        One User can have multiple Images.
-        Each Image is associated with exactly one User.
-
-
+     
 ```
 +-----------------+          +-----------------+
 |      Users      |          |      Images     |
@@ -56,9 +57,9 @@ Users - Images Relationship:
 +-----------------------------+
 
 ```
-
-# Stuff to change for larger image files :
-C:\xampp\mysql\bin\my.ini set:
+      
+# Stuff to change for larger image files :      
+Navigate to C:\xampp\mysql\bin\my.ini and set:      
 
 ```
 max_allowed_packet=100M
