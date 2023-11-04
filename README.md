@@ -1,33 +1,40 @@
 # SelfieStylizer
 
-install https://getcomposer.org/download/
-run following commmand inside proect directory 
+# Before Running:
+Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing  
+Paste them in the models folder inside the stylise folder.   
+     
+ER Diagram :    
+Entities:   
+    
+Users:   
+        Attributes:    
+            Email (Primary Key)    
+            Password   
+            Credits    
+            userName    
 
-```
-composer require phpmailer/phpmailer
-```
+Images:    
+        Attributes:    
+            Email (Foreign Key referencing Users)    
+            Image (LONGBLOB)    
+            id     
+            parentID    
+ 
+S Gallery:    
+        Attributes:    
+            Email (Foreign Key referencing Users)    
+            Image (LONGBLOB)    
+            userName     
+            Style    
+      
+Relationship:    
 
-ER Diagram :
-Entities:
+Users - Images Relationship:    
+        One User can have multiple Images.      
+        Each Image is associated with exactly one User.    
 
-Users:
-        Attributes:
-            Email (Primary Key)
-            Password
-            Credits
-
-Images:
-        Attributes:
-            Email (Foreign Key referencing Users)
-            Image (LONGBLOB)
-
-Relationship:
-
-Users - Images Relationship:
-        One User can have multiple Images.
-        Each Image is associated with exactly one User.
-
-
+      
 ```
 +-----------------+          +-----------------+
 |      Users      |          |      Images     |
@@ -50,14 +57,14 @@ Users - Images Relationship:
 +-----------------------------+
 
 ```
-
-# Stuff to change for larger image files :
-C:\xampp\mysql\bin\my.ini set:
-
+      
+# Stuff to change for larger image files :      
+Navigate to C:\xampp\mysql\bin\my.ini and set:      
+     
 ```
 max_allowed_packet=100M
 ```
-
+      
 
 
 ## References

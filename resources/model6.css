@@ -10,6 +10,7 @@ body {
 
     font-family: ArcadeClassic;
     src: url(arcadeclassic.regular.ttf);
+    word-spacing: 10px;
 
 
     /* background-color: #000011;*/
@@ -479,4 +480,4 @@ h1 {
     font-size: xx-large;
 
     color: #daeaf1;
-  }
+}
