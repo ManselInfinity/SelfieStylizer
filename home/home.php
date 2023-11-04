@@ -41,12 +41,12 @@ $nImages = $result->num_rows;
         
         <div class="mid">
             <ul class="navbar">
-                <li><a href="">Home</a></li><br><br>
-                <li><a href="./../stylise/stylise.html">Stylise</a></li><br><br>
-                <li><a href="./../socialGallery/social.php">S-Gallery</a></li><br><br>
-                <li><a href="./../extraPages/tutorial.html">Tutorial</a></li><br><br>
-                <li><a href="./../payment/pay.html">Pay</a></li><br><br>
-                <li><a href="./../extraPages/aboutUs.html">About Us</a></li><br><br>
+                <li><a href="">HOME</a></li><br><br>
+                <li><a href="./../stylise/stylise.html">STYLISE</a></li><br><br>
+                <li><a href="./../socialGallery/social.php">S-GALLERY</a></li><br><br>
+                <li><a href="./../extraPages/tutorial.html">TUTORIAL</a></li><br><br>
+                <li><a href="./../payment/pay.html">PAY</a></li><br><br>
+                <li><a href="./../extraPages/aboutUs.html">ABOUT US</a></li><br><br>
             </ul>
         </div>
     </div>

@@ -3,6 +3,8 @@ const loginLink = document.querySelector('.login-link'); // Corrected variable n
 const registerLink = document.querySelector('.register-link'); // Corrected variable name
 const btnPopup = document.querySelector('.btnlogin-popup');
 const iconClose = document.querySelector('.icon-close');
+const showMenu = document.getElementById('show-menu');
+const navMenu = document.getElementById('nav-menu');
 
 registerLink.addEventListener('click', () => { // Corrected variable name
     wrapper.classList.add('active');
@@ -19,6 +21,12 @@ btnPopup.addEventListener('click', () => {
 iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup'); // Removed the dot before 'active-popup'
 });
+
+
+showMenu.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+});
+
 
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");

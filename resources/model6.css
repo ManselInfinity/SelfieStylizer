@@ -41,7 +41,8 @@ body {
 
     width: 400px;
     height: 600px;
-    background: rgba(10, 38, 54, 0.719);
+    /* background: rgba(10, 38, 54, 0.719); */
+   
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 30px;
     backdrop-filter: blur(20px);
@@ -212,14 +213,14 @@ body {
 .login-register p a:hover {
     text-decoration: underline;
 }
-
+/* 
 .l {
     position: absolute;
     top: -5%;
     left: -2%;
     height: 345%;
-    border: 2px solid #eaedee;
-    width: 8%;
+    border: 2px solid #0f0f0f;
+    width: 5%;
     padding: 5%;
     background: transparent;
     border-radius: 20px;
@@ -229,17 +230,142 @@ body {
     align-items: center;
     overflow: hidden;
 
+} */
+
+
+
+/* .navbar li a {
+    position: absolute;
+    left: 10%;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 900;
+    color: #f7f7f7;
+    padding: 0px;
+    font-family: Griffy;
+    
 }
 
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: #689cb4;
+} */
 
-.btnlogin-popup {
+
+
+/* .contain {
     position: absolute;
-    bottom: -50%;
-    left: 10%;
-    font-family: ArcadeClassic;
+    font-weight: bold;
+    left: 128px;
+    top: 50%;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
 
-    src: url(arcadeclassic.regular.ttf);
     font-size: 20px;
+   
+    color: #f2f7fa;
+
+} */
+
+.mid {
+    display: inline-block;
+    width: 10%;
+    /*border:2px solid rgb(245, 240, 240);*/
+    position: absolute;
+    left: 0%;
+    
+    font-size: 30px;
+    padding: 1%;
+    top: 12px;
+    color: blue;
+}
+
+/* .navbar {
+    color: rgb(71, 69, 69);
+    list-style: none;
+    position: absolute;
+    top: 80px;
+
+} */
+
+
+
+.navbar {
+
+ 
+
+
+
+
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    left: -250px;
+    width: 120px; /* Adjust the width as needed */
+    height: 100%;
+    background: #0d0d0d; /* Add a background color to the sidebar */
+    transition: 0.5s;
+    padding: 10px;
+  
+  
+    border: 2px solid #0f0f0f;
+    width: 5%;
+    padding: 5%;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 8.9);
+
+    overflow: hidden;
+  
+    
+  }
+  
+  .navbar.active {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px; /* Add some vertical spacing between list items */
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f7f7f7;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a:active {
+    color: #689cb4;
+  }
+
+.text{
+    white-space: nowrap;
+   
+    
+    border: solid 1px black;
+    border-radius: 25%;
+}
+
+  .btnlogin-popup {
+    /* position: absolute;
+    bottom: -50%;
+    left: 10%; */
+    font-family: ArcadeClassic;
+    margin-bottom: 40px;
+    /* font-family: Griffy; */
+    /* src: url(arcadeclassic.regular.ttf); */
+    font-size: 30px;
     font-weight: 900;
     color: #eff1f1;
     padding: 10%;
@@ -253,60 +379,6 @@ body {
 .btnlogin-popup:hover {
     color: #689cb4;
 }
-
-
-
-.navbar li a {
-    position: absolute;
-    left: 10%;
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 900;
-    color: #f7f7f7;
-    padding: 0px;
-}
-
-.navbar li a:hover,
-.navbar li a:active {
-    text-decoration: underline;
-    color: #689cb4;
-}
-
-
-
-.contain {
-    position: absolute;
-    font-weight: bold;
-    left: 128px;
-    top: 50%;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
-    /* font-style: italic; */
-    font-size: 20px;
-    /* border: 2px solid rgb(248, 244, 244);*/
-    color: #f2f7fa;
-
-}
-
-.mid {
-    display: inline-block;
-    width: 10%;
-    /*border:2px solid rgb(245, 240, 240);*/
-    position: absolute;
-    left: 0%;
-    font-size: 30px;
-    padding: 1%;
-    top: 12px;
-    color: blue;
-}
-
-.navbar {
-    color: rgb(71, 69, 69);
-    list-style: none;
-
-}
-
 #message {
     display: none;
     background: #8ba8b881;
@@ -370,3 +442,41 @@ body {
 h1 {
     color: #daeaf1;
 }
+
+
+.wrapper .form-box.register {
+    /* Remove any specific styles for the registration form */
+    /* Add styles to make the registration form match the size of the login form */
+    width: 100%;
+    padding: 40px;
+}
+
+
+.input-box.register label {
+    /* Adjust label position for the registration form */
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(17, 16, 16);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.fa-bars {
+    position: fixed;
+    top: 7%;
+    left: 2%;
+    font-size: xx-large;
+    color: #daeaf1;
+  }
+
+  .fa-house{
+    font-size: xx-large;
+
+    color: #daeaf1;
+  }
