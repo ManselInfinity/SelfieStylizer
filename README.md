@@ -1,11 +1,7 @@
 # SelfieStylizer
 
-install https://getcomposer.org/download/
-run following commmand inside project directory 
-
-```
-composer require phpmailer/phpmailer
-```
+# Before Running:
+        Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing and paste them in the models directory in stylise.
 
 ER Diagram :
 Entities:
@@ -15,11 +11,21 @@ Users:
             Email (Primary Key)
             Password
             Credits
+            userName 
 
 Images:
         Attributes:
             Email (Foreign Key referencing Users)
             Image (LONGBLOB)
+            id
+            parentID
+
+S Gallery:
+        Attributes:
+            Email (Foreign Key referencing Users)
+            Image (LONGBLOB)
+            userName
+            Style
 
 Relationship:
 
