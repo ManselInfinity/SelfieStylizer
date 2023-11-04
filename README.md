@@ -4,9 +4,9 @@
 Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing  
 Paste them in stylise/models folder.   
      
-ER Diagram :
+ER Diagram :    
 Entities:   
-
+    
 Users:   
         Attributes:    
             Email (Primary Key)    
@@ -34,7 +34,7 @@ Users - Images Relationship:
         One User can have multiple Images.      
         Each Image is associated with exactly one User.    
 
-     
+      
 ```
 +-----------------+          +-----------------+
 |      Users      |          |      Images     |
@@ -60,11 +60,11 @@ Users - Images Relationship:
       
 # Stuff to change for larger image files :      
 Navigate to C:\xampp\mysql\bin\my.ini and set:      
-
+     
 ```
 max_allowed_packet=100M
 ```
-
+      
 
 
 ## References
