@@ -1,8 +1,7 @@
 # SelfieStylizer
 
 # Before Running:
-Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing 
-, and paste them in stylise/models folder.
+Download model files from: https://drive.google.com/drive/folders/1qXMrNJgsv7NxLWoN9gSI82k43EmXT8vM?usp=sharing , and paste them in stylise/models folder.
 
 ER Diagram :
 Entities:
