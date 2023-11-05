@@ -79,14 +79,19 @@ body {
 
 
 
-.innerDivHover:hover,h1 {
-    background: rgba(1, 28, 53, 0.772);
+.innerDivHover:hover {
+    /* background: rgba(1, 28, 53, 0.772); */
     /* border: 2px solid rgba(255, 255, 255, .5); */
     color:rgba(255, 255, 255, .5);
 }
 
 h1 {
     color: #daeaf1;
+
+}
+h1:hover {
+  text-decoration: underline;
+  color: #689cb4;
 
 }
 
