@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Options</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pay.css">
 </head>
 
@@ -15,11 +18,11 @@
 
         <div class="mid">
             <ul class="navbar">
-                <li><a href="./../home/home.php">Home</a></li><br><br>
-                <li><a href="./../stylise/stylise.html">Stylise</a></li><br><br>
-                <li><a href="./../socialGallery/social.php">S-Gallery</a></li><br><br>
-                <li><a href="#">Tutorial</a></li><br><br>
-                <li><a href="#">About Us</a></li><br><br>
+                <li><a href="./../home/home.php"> <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
+                <li><a href="./../stylise/stylise.html"> <i class="fa-solid fa-plus"></i> STYLISE</a></li><br><br>
+                <li><a href="./../socialGallery/social.php"> <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
+                <li><a href="#"> <i class="fa-solid fa-school"></i>  TUTORIAL</a></li><br><br>
+                <li><a href="#"> <i class="fa-solid fa-address-card"></i>  ABOUT US</a></li><br><br>
             </ul>
         </div>
     </header>
@@ -27,25 +30,38 @@
     <div class="outerDiv">
         <div class="innerDiv">
 
+            <div class="innerDivHover">
+
+                <div class="main_wrapper">
+                    <div class="money_paper">
+                      <div class="moneys" data-cent=".57" data-currency="$">150</div>
+                      <div class="paper_shadow"></div>
+                    </div>
+                  </div>
+
+            </div>
+<br>
             <div class="innerDivHover" onclick="location.href = 'pay100.php';">
 
-                <h1>Pay 100 for 100 Credits > <h1>
+                <h1> <i class="fa-solid fa-coins"></i> Pay 100 for 100 Credits > <h1>
 
             </div>
 
             <br>
 
             <div class="innerDivHover" onclick="location.href = 'pay200.php';">
-                <h1> Pay 150 for 200 Credits > <h1>
+                <h1> <i class="fa-solid fa-money-check-dollar"></i>  Pay 150 for 200 Credits > <h1>
             </div>
 
             <br>
 
-            <div class="innerDivHover" onclick="window.location.href = 'https://bit.ly/3BlS71b';">
-                <h1> Free: 10 Credits </h1>
-            </div>
+            <!-- <div class="innerDivHover" onclick="window.location.href = 'https://bit.ly/3BlS71b';">
+                <h1> <i class="fa-regular fa-face-explode"></i> Free: 10 Credits </h1>
+            </div> -->
         </div>
     </div>
+
+    <script src="pay.js"></script>
 </body>
 
 </html>

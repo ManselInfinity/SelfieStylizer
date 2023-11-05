@@ -30,6 +30,11 @@ $nImages = $result->num_rows;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -41,12 +46,12 @@ $nImages = $result->num_rows;
         
         <div class="mid">
             <ul class="navbar">
-                <li><a href="">HOME</a></li><br><br>
-                <li><a href="./../stylise/stylise.html">STYLISE</a></li><br><br>
-                <li><a href="./../socialGallery/social.php">S-GALLERY</a></li><br><br>
-                <li><a href="./../extraPages/tutorial.html">TUTORIAL</a></li><br><br>
-                <li><a href="./../payment/pay.html">PAY</a></li><br><br>
-                <li><a href="./../extraPages/aboutUs.html">ABOUT US</a></li><br><br>
+                <li><a href="">  <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
+                <li><a href="./../stylise/stylise.html">  <i class="fa-solid fa-plus"></i> STYLISE</a></li><br><br>
+                <li><a href="./../socialGallery/social.php">  <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
+                <li><a href="./../extraPages/tutorial.html"> <i class="fa-solid fa-school"></i> TUTORIAL</a></li><br><br>
+                <li><a href="./../payment/pay.html">  <i class="fa-brands fa-amazon-pay"></i>  PAY</a></li><br><br>
+                <li><a href="./../extraPages/aboutUs.html"> <i class="fa-solid fa-address-card"></i>  ABOUT US</a></li><br><br>
             </ul>
         </div>
     </div>
