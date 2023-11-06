@@ -33,7 +33,8 @@
         <div style="background: rgba(1, 16, 29, 0.699); 
                     font-family: ArcadeClassic;
                     src: url(./../resources/arcadeclassic.regular.ttf);                   
-                    padding: 30px;                    
+                    padding: 25px;
+                    margin: auto;                    
                     border: 2px solid rgb(96, 111, 160);
                     border-radius: 20px;
                     backdrop-filter: blur(10px);
@@ -66,7 +67,7 @@
                 <br>
                 <br>
 
-                <label for="img" class="btn">
+                <label for="img" class="button">
                     Select Image </label>
 
                 <input type="file" accept="image/*" name="image" id="img" style=" width: 0.1px;
@@ -74,6 +75,9 @@
                                                                 opacity: 0;
                                                                 overflow: hidden;
                                                                 position: absolute;">
+
+                <!-- <div style="margin: 0.5%;"></div> -->
+
                 <input type="submit" name="submit" value="Upload" class="frm" onclick="showLoading()">
 
                 <br>
@@ -81,8 +85,10 @@
                 <h1 style="color: rgb(229, 235, 241);
                            font-size: 1em;">Preview:</h1>
                 <br>
+
                 <div id="imagePreview"></div>
 
+                <!-- script to display image preview -->
                 <script>
                     // JavaScript to display a preview of the selected image
                     const fileInput = document.getElementById("img");
