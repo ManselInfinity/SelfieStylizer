@@ -2,6 +2,8 @@
 
 require_once './../resources/dbConfig.php';
 
+$flag=true;
+
 session_start();
 
 $imageData = $_SESSION['image'];
@@ -61,23 +63,18 @@ $base64Image = base64_encode($imageData);
                 <br>
                 
                 <?php
-      
-                    if(isset($_POST['button1'])) 
-                    {
-                        $convertedImage = addslashes($imageData);
 
+                if (isset($_POST['button1'])) {
+                    $convertedImage = addslashes($imageData);
+                    if ($flag) {
                         $insert = $conn->query("INSERT into socialGallery (email, image, userName, style) VALUES ('$email', '$convertedImage', '$userName', '$style');");
+                        $flag = false;
+                        echo "<script> alert('Image Uploaded Successfully');</script>";
+                    } else {
+                        echo "<script> alert('Image Already Uploaded');</script>";
 
-                        //todo remove before deploy maybe 
-                        if ($insert) {
-                            $status = 'success';
-                            $statusMsg = "parent image uploaded successfully.";
-                        } else {
-                            $statusMsg = "File upload failed, please try again.";
-                        }
-
-                    echo "<script> alert('Image Uploaded Successfully');</script>";
-                    } 
+                    }
+                }
                 ?> 
     
                 <form method="post"> 
