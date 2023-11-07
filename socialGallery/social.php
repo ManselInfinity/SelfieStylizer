@@ -23,7 +23,7 @@ $nImages = $result->num_rows;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S-Gallery</title>
-    <link rel="stylesheet" href="./social.css">
+    <link rel="stylesheet" href="s.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,18 +32,19 @@ $nImages = $result->num_rows;
     
     
     <div class="header">
+    <i class="fas fa-bars" id="show-menu"></i>
         <div class="l">
         </div>
         
         <div class="mid">
-            <ul class="navbar">
-                <li><a href="./../home/home.php"> <i class="fa-sharp fa-solid fa-house"></i>Home</a></li><br><br>
-                <li><a href="./../stylise/stylise.html"><i class="fa-solid fa-plus"></i>Stylise</a></li><br><br>
-                <li><a href=""> <i class="fa-solid fa-rectangle-history-circle-user"></i>S-Gallery</a></li><br><br>
-                <li><a href="./../extraPages/tutorial.html"> <i class="fa-solid fa-school"></i>Tutorial</a></li><br><br>
-                <li><a href="./../payment/pay.html"> <i class="fa-brands fa-amazon-pay"></i> Pay</a></li><br><br>
-                <li><a href="./../extraPages/aboutUs.html"><i class="fa-solid fa-address-card"></i>About Us</a></li><br><br>
-            </ul>
+            <ul class="navbar" id="nav-menu">
+                <li><a class="te" href="./../home/home.php"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a></li><br><br>
+                <li><a class="te"  href="./../stylise/stylise.html"><i class=" fa-solid fa-plus"></i>STYLISE</a></li><br><br>
+                <li><a class="te" href=""> <i class="fas fa-image"></i>S-Gallery</a></li><br><br>
+                <li><a class="te" href="./../extraPages/tutorial.html"><i class=" fa-solid fa-school"></i>TUTORIAL</a></li><br><br>
+                <li><a class="te" href="./../payment/pay.html"><div class="oo" > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" ><path fill="currentColor" d="m22.436 0l-11.91 7.773l-1.174 4.276l6.625-4.297L11.65 24h4.391l6.395-24zM14.26 10.098L3.389 17.166L1.564 24h9.008l3.688-13.902Z" /></svg></div><div class="pay" > PAY</div></a></li><br><br>
+                <li><a class="te" href="./../extraPages/aboutUs.html"><i class=" fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
+           </ul>
         </div>
     </div>
 
@@ -108,7 +109,7 @@ $nImages = $result->num_rows;
     </div>
 
     
-    <script src="social.js"></script>
+    <script src="s.js"></script>
 </body>
 </html>
 

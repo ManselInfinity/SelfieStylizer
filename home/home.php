@@ -35,7 +35,7 @@ $nImages = $result->num_rows;
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="ho.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     
@@ -47,12 +47,12 @@ $nImages = $result->num_rows;
         
         <div class="mid">
             <ul class="navbar" id="nav-menu">
-                <li><a class="te" href="">  <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
-                <li><a class="te"  href="./../stylise/stylise.html">  <i class="fa-solid fa-plus"></i> STYLISE</a></li><br><br>
-                <li><a class="te" href="./../socialGallery/social.php">  <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
-                <li><a class="te" href="./../extraPages/tutorial.html"> <i class="fa-solid fa-school"></i> TUTORIAL</a></li><br><br>
-                <li><a class="te" href="./../payment/pay.html">  <i class="fa-brands fa-amazon-pay"></i>  PAY</a></li><br><br>
-                <li><a class="te" href="./../extraPages/aboutUs.html"> <i class="fa-solid fa-address-card"></i>  ABOUT US</a></li><br><br>
+                <li><a class="te" href=""><i class=" fa-sharp fa-solid fa-house"></i>HOME</a></li><br><br>
+                <li><a class="te"  href="./../stylise/stylise.html"><i class=" fa-solid fa-plus"></i>STYLISE</a></li><br><br>
+                <li><a class="te" href="./../socialGallery/social.php"><i class="fas fa-image"></i>S-GALLERY</a></li><br><br>
+                <li><a class="te" href="./../extraPages/tutorial.html"><i class=" fa-solid fa-school"></i>TUTORIAL</a></li><br><br>
+                <li><a class="te" href="./../payment/pay.html"><div class="oo" > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" ><path fill="currentColor" d="m22.436 0l-11.91 7.773l-1.174 4.276l6.625-4.297L11.65 24h4.391l6.395-24zM14.26 10.098L3.389 17.166L1.564 24h9.008l3.688-13.902Z" /></svg></div><div class="pay" > PAY</div></a></li><br><br>
+                <li><a class="te" href="./../extraPages/aboutUs.html"><i class=" fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
             </ul>
         </div>
     </div>
