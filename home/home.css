@@ -164,9 +164,9 @@ body {
 
 }
 
-.navbar li a {
+/* .navbar li a {
     position: absolute;
-    /* background-color: rgba(91, 117, 166, 0.124); */
+   
     border-radius: 15%;
     width: 100%;
     left: 0%;
@@ -184,22 +184,9 @@ body {
 .navbar li a:active {
     text-decoration: underline;
     color: #689cb4;
-}
+} */
 
-.contain {
-    position: absolute;
-    font-weight: bold;
-    left: 128px;
-    top: 75%;
-    width: 30%;
-    padding: 5px;
-    text-align: center;
-    font-style: italic;
-    font-size: 20px;
-    /* border: 2px solid rgb(248, 244, 244);*/
-    color: #f2f7fa;
 
-}
 
 .mid {
     display: inline-block;
@@ -213,33 +200,90 @@ body {
     color: blue;
 }
 
-.navbar {
+/* .navbar {
     color: rgb(71, 69, 69);
     list-style: none;
 
-}
+} */
 
-.btnlogin-popup {
-    position: absolute;
-    bottom: -50%;
-    left: 10%;
-    font-size: 20px;
-    font-weight: 900;
-    color: #eff1f1;
-    padding: 10%;
-    background-image: url(img11.png);
-    border: 2px solid #dfe5e7;
-    border-radius: 25%;
-    background: transparent;
-    backdrop-filter: blur(40px);
-}
 
-.btnlogin-popup:hover {
-    color: #689cb4;
-}
 
 .header {
     position: static;
     top: 0px;
     left: 0px;
 }
+
+.navbar {
+
+ 
+
+
+
+
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    left: -250px;
+    width: 120px; /* Adjust the width as needed */
+    height: 100%;
+    background: #0d0d0d; /* Add a background color to the sidebar */
+    transition: 0.5s;
+    padding: 10px;
+  
+  
+    border: 2px solid #0f0f0f;
+    width: 5%;
+    padding: 5%;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 8.9);
+
+    overflow: hidden;
+  
+    
+  }
+  
+  .navbar.active {
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px; /* Add some vertical spacing between list items */
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f7f7f7;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a:active {
+    color: #689cb4;
+  }
+
+.te{
+    white-space: nowrap;
+   text-decoration: underline;
+/*     
+    border: solid 1px black; */
+    border-radius: 25%;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 7%;
+    left: 2%;
+    font-size: xx-large;
+    color: #daeaf1;
+  }
+

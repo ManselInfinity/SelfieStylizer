@@ -1,15 +1,6 @@
-const showMenu = document.getElementById('show-menu');
-const navMenu = document.getElementById('nav-menu');
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-showMenu.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-});
-
-
-
+let slideIndex = 1;
+showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -36,7 +27,5 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-
-
 
 

@@ -35,26 +35,52 @@ $nImages = $result->num_rows;
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="ho.css">
 </head>
 <body>
     
     
     <div class="header">
+    <i class="fas fa-bars" id="show-menu"></i>
         <div class="l">
         </div>
         
         <div class="mid">
-            <ul class="navbar">
-                <li><a href="">  <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
-                <li><a href="./../stylise/stylise.html">  <i class="fa-solid fa-plus"></i> STYLISE</a></li><br><br>
-                <li><a href="./../socialGallery/social.php">  <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
-                <li><a href="./../extraPages/tutorial.html"> <i class="fa-solid fa-school"></i> TUTORIAL</a></li><br><br>
-                <li><a href="./../payment/pay.html">  <i class="fa-brands fa-amazon-pay"></i>  PAY</a></li><br><br>
-                <li><a href="./../extraPages/aboutUs.html"> <i class="fa-solid fa-address-card"></i>  ABOUT US</a></li><br><br>
+            <ul class="navbar" id="nav-menu">
+                <li><a class="te" href="">  <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
+                <li><a class="te"  href="./../stylise/stylise.html">  <i class="fa-solid fa-plus"></i> STYLISE</a></li><br><br>
+                <li><a class="te" href="./../socialGallery/social.php">  <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
+                <li><a class="te" href="./../extraPages/tutorial.html"> <i class="fa-solid fa-school"></i> TUTORIAL</a></li><br><br>
+                <li><a class="te" href="./../payment/pay.html">  <i class="fa-brands fa-amazon-pay"></i>  PAY</a></li><br><br>
+                <li><a class="te" href="./../extraPages/aboutUs.html"> <i class="fa-solid fa-address-card"></i>  ABOUT US</a></li><br><br>
             </ul>
         </div>
     </div>
+
+    <!-- <header>
+        <i class="fas fa-bars" id="show-menu"></i>
+  
+        <div class="l">
+        </div>
+        <div class="col">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar" id="nav-menu">
+              
+                <li><a class="text" href="#">  <i class="fa-sharp fa-solid fa-house"></i> HOME</a></li><br><br>
+                <li><a class="text" href="#"> <i class="fa-solid fa-plus"></i> STYLISE </a></li><br><br>
+                <li><a class="text" href="#">  <i class="fa-solid fa-rectangle-history-circle-user"></i> S-GALLERY</a></li><br><br>
+                <li><a class="text" href="#">  <i class="fa-solid fa-school"></i> TUTORIAL</a></li><br><br>
+                <li><a class="text" href="#">  <i class="fa-brands fa-amazon-pay"></i>  PAY</a></li><br><br>
+                <li><a class="text" href="#"> <i class="fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
+                <li><a>""</a></li>
+                <li><a>""</a></li>
+           
+                <li><button class="btnlogin-popup">  <i class="fa-solid fa-right-to-bracket"></i> LOGIN</button></li>
+            </ul>
+        </div>
+    </header> -->
 
     <br>
     
@@ -118,8 +144,15 @@ $nImages = $result->num_rows;
 
     </div>
 
+
+
+
+
+
+    
     
     <script src="home.js"></script>
+    <!-- <script src="e.js"></script> -->
 </body>
 </html>
 
