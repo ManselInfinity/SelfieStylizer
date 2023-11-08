@@ -3,8 +3,7 @@ const loginLink = document.querySelector('.login-link'); // Corrected variable n
 const registerLink = document.querySelector('.register-link'); // Corrected variable name
 const btnPopup = document.querySelector('.btnlogin-popup');
 const iconClose = document.querySelector('.icon-close');
-const showMenu = document.getElementById('show-menu');
-const navMenu = document.getElementById('nav-menu');
+
 
 registerLink.addEventListener('click', () => { // Corrected variable name
     wrapper.classList.add('active');
@@ -23,9 +22,7 @@ iconClose.addEventListener('click', () => {
 });
 
 
-showMenu.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-});
+
 
 
 var myInput = document.getElementById("psw");
