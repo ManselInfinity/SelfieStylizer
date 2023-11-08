@@ -33,7 +33,8 @@ $base64Image = base64_encode($imageData);
 </head>
 
 <body>
-    <header>
+    
+<header>
         <!-- <h2 class="logo">logo</h2>
         <nav class="navigation">
             <a href="#">home</a>

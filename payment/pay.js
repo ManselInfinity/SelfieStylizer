@@ -20,4 +20,4 @@ function updateMoneys(d, c) {
 
 let updateTimer = window.setInterval(() => {
   updateMoneys(dollars, cents);
-}, 54);
+}, 50);

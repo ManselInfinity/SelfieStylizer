@@ -1,14 +1,12 @@
 const showMenu = document.getElementById('show-menu');
 const navMenu = document.getElementById('nav-menu');
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
+let slideIndex = 1;
+showSlides(slideIndex);
 
-showMenu.addEventListener('click', function() {
+showMenu.addEventListener('click', function () {
     navMenu.classList.toggle('active');
 });
-
-
 
 
 // Next/previous controls
