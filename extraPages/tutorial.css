@@ -292,7 +292,7 @@ body {
 
     /* align-items: center; */
     position: fixed;
-    top: -5%;
+    top: -12%;
     left: 0px;
     width: 120px; 
     height: 100%;
@@ -301,7 +301,7 @@ body {
     padding: 10px;
   
     border: 2px solid #0f0f0f;
-    width: 7%;
+    width: 3%;
     padding: 5%;
     background: transparent;
     border-radius: 20px;
@@ -319,7 +319,7 @@ body {
   } */
   
   .navbar li {
-    margin-bottom: 40px; 
+    margin-bottom: 50px; 
     margin-left: 10px;
   }
 
@@ -361,7 +361,7 @@ padding: 30%;
     padding: 34%;
     background-image: url(img11.png);
     border: 2px solid #011014;
-
+    
     border-radius: 25%;
     background: transparent;
     backdrop-filter: blur(40px);
@@ -407,19 +407,23 @@ padding: 30%;
 .innerDiv {
     background: rgba(1, 16, 29, 0.699);
     padding: 30px;
-    border: 2px solid rgb(96, 111, 160);
+    /* border: 2px solid rgb(96, 111, 160); */
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 3%;
 }
 
 
 .innerDivHover {
     background: rgba(1, 16, 29, 0.699);
     padding: 30px;
-    border: 2px solid rgb(96, 111, 160);
+    /* border: 2px solid rgb(96, 111, 160); */
+      border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -527,23 +531,4 @@ h1 {
     position: absolute;
     top:68%;
     left:25%;
-  }
-  .mage{
-    position: absolute;
-    top: -10%;
-    width: 600px;
-    height: 400px;
-z-index: 1;
-    left: 20%;
-    letter-spacing: 30%;
-    
-  }
-  .me{
-    position: absolute;
-    top: -3%;
-    width: 200px;
-    height: 150px;
-z-index: 1;
-    left: 5%;
-    letter-spacing: 30%;
   }
