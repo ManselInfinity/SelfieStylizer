@@ -26,7 +26,7 @@ def parse_args():
     parser.add_argument("--seed", default="3000", help="seed")
     args = parser.parse_args()
     return args
-6e
+
 
 if __name__ == "__main__":
     print('hello from python')
