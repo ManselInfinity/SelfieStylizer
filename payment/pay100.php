@@ -14,7 +14,6 @@ $api = new Api($keyId, $keySecret);
 $amount = 100;
 $currency = 'INR';
 
-//! get user id from databse
 $receipt = uniqid() . "userID";
 
 

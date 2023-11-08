@@ -106,6 +106,8 @@ $nImages = $result->num_rows;
             </div>
         </div>
 
+        <?php if($nImages > 0) {
+            ?>
         <!-- Slideshow container -->
         <div class="outerDiv" style="height: 85%; width: 85%;
                                      position: relative;
@@ -146,6 +148,8 @@ $nImages = $result->num_rows;
                 </div>
             </div>
         </div>
+
+        <?php              }?>
 
     </div>
 
