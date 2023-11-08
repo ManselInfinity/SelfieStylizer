@@ -7,7 +7,12 @@ session_start();
 // Get image data from database ,
 // select the parent and converted image, 
 // at random, and limited to 3 at most
+
+
 $email = $_SESSION['email'];
+
+// $email='manselismyname@gmail.com';
+
 $query = "select image, userName, style from socialGallery order by rand() limit 6";
 $result = $conn->query($query);
 

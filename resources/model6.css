@@ -292,7 +292,7 @@ body {
 
     /* align-items: center; */
     position: fixed;
-    top: -12%;
+    top: -5%;
     left: 0px;
     width: 120px; 
     height: 100%;
@@ -319,7 +319,7 @@ body {
   } */
   
   .navbar li {
-    margin-bottom: 50px; 
+    margin-bottom: 40px; 
     margin-left: 10px;
   }
 
@@ -361,7 +361,7 @@ padding: 30%;
     padding: 34%;
     background-image: url(img11.png);
     border: 2px solid #011014;
-    
+
     border-radius: 25%;
     background: transparent;
     backdrop-filter: blur(40px);
@@ -527,4 +527,23 @@ h1 {
     position: absolute;
     top:68%;
     left:25%;
+  }
+  .mage{
+    position: absolute;
+    top: -10%;
+    width: 600px;
+    height: 400px;
+z-index: 1;
+    left: 20%;
+    letter-spacing: 30%;
+    
+  }
+  .me{
+    position: absolute;
+    top: -3%;
+    width: 200px;
+    height: 150px;
+z-index: 1;
+    left: 5%;
+    letter-spacing: 30%;
   }
