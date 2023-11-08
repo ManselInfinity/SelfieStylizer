@@ -85,7 +85,7 @@ $nImages = $result->num_rows;
                                                                                                                                 border: 2px solid rgba(30, 90, 168, 0.942);
                                                                                                                                 position:relative;
                                                                                                                                 left: 27%;" alt="img">
-                                <figcaption> <b style="font-weight:bold;">User:</b> <b style="color:rgb(160, 200, 235);"><?php echo $row['userName'];?> </b>     <b>Style:</b> <b style="color:rgb(160, 200, 235);"><?php echo $row['style'];?> </b></figcaption>                            
+                                <figcaption> <b style="color:antiquewhite"; style="font-size: 700px";  style="font-weight:bold;">User:</b> <b style="color:antiquewhite"; ><?php echo $row['userName'];?> </b>     <b>Style:</b> <b style="color:rgb(160, 200, 235);"><?php echo $row['style'];?> </b></figcaption>                            
                             </figure>
                         
                         </div>

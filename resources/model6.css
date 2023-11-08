@@ -301,7 +301,7 @@ body {
     padding: 10px;
   
     border: 2px solid #0f0f0f;
-    width: 7%;
+    width: 5%;
     padding: 5%;
     background: transparent;
     border-radius: 20px;
@@ -546,4 +546,16 @@ z-index: 1;
 z-index: 1;
     left: 5%;
     letter-spacing: 30%;
+  }
+
+
+  .logout{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #f7f7f7;
+  }
+
+  .logout:hover {
+    color: #689cb4;
   }

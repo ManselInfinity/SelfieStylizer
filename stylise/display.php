@@ -30,6 +30,9 @@ $base64Image = base64_encode($imageData);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converted Image</title>
     <link rel="stylesheet" href="./../resources/model6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -47,11 +50,12 @@ $base64Image = base64_encode($imageData);
         </div>
         <div class="mid">
             <ul class="navbar">
-                <li><a href="./../home/home.php">Home</a></li><br><br>
-                <li><a href="./stylise.html">Stylise</a></li><br><br>
-                <li><a href="./../socialGallery/social.php">S-Gallery</a></li><br><br>
-                <li><a href="./../extraPages/tutorial.html">Tutorial</a></li><br><br>
-                <li><a href="./../extraPages/aboutUs.html">About Us</a></li><br><br>
+                
+            <li><a class="te" href="./../home/home.php"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a></li><br><br>
+                <li><a class="te"  href="./../stylise/stylise.html"><i class=" fa-solid fa-plus"></i>STYLISE</a></li><br><br>
+                <li><a class="te" href="./../socialGallery/social.php"><i class="fas fa-image"></i>S-GALLERY</a></li><br><br>
+                <li><a class="te" href="./../extraPages/aboutUs.html"><i class=" fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
+                <li><a  href="./../model6.html"> <button class="logout">  <i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></li> </a>
             </ul>
         </div>
     </header>
