@@ -2,22 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OTP Page</title>
-  <link rel="stylesheet" href="./otp1.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OTP Page</title>
+	<link rel="stylesheet" href="./otp1.css">
 </head>
 
 <body>
-  <div class="container">
-    <form action="./verifyOTP.php" method="post">
-      <h1>Enter OTP</h1>
-      <input type="text" name="otp" id="otp" maxlength="4" />
-      <button id="submitBtn" class="button">Submit</button>
-      <p id="message"></p>
-    </form>
-  </div>
-  <script src="otp1.js"></script>
+	<div class="container">
+		<form action="./verifyOTP.php" method="post">
+			<pre><h1 style="color: aliceblue; font-family: ArcadeClassic;">Enter   OTP</h1></pre>
+
+			<label style="color:aliceblue;">An OTP has been sent to your email </label>
+			<br>
+			<input type="text" name="otp" id="otp" maxlength="4" style="background: rgba(230, 232, 236, 0.794);
+	  															  		border-radius: 3px;
+																		border-color: rgb(106, 130, 165);" />
+			<button id="submitBtn" class="button">Submit</button>
+			<p id="message"></p>
+		</form>
+	</div>
+	<script src="otp1.js"></script>
 </body>
 
 </html>
