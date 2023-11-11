@@ -56,9 +56,10 @@ $nImages = $result->num_rows;
                 <li><a class="te"  href="./../stylise/stylise.html"><i class=" fa-solid fa-plus"></i>STYLISE</a></li><br><br>
                 <li><a class="te" href="./../socialGallery/social.php"><i class="fas fa-image"></i>S-GALLERY</a></li><br><br>
                 <li><a class="te" href="./../extraPages/tutorial.html"><i class=" fa-solid fa-school"></i>TUTORIAL</a></li><br><br>
-                <li><a class="te" href="./../payment/pay.html"><div class="oo" > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" ><path fill="currentColor" d="m22.436 0l-11.91 7.773l-1.174 4.276l6.625-4.297L11.65 24h4.391l6.395-24zM14.26 10.098L3.389 17.166L1.564 24h9.008l3.688-13.902Z" /></svg></div><div class="pay" > PAY</div></a></li><br><br>
+                <li><a class="te" href="./../payment/pay.html"> <svg style="      margin-right: 100%;
+      margin-left: -444%;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" ><path fill="currentColor" d="m22.436 0l-11.91 7.773l-1.174 4.276l6.625-4.297L11.65 24h4.391l6.395-24zM14.26 10.098L3.389 17.166L1.564 24h9.008l3.688-13.902Z" /></svg>PAY</a></li><br><br>
                 <li><a class="te" href="./../extraPages/aboutUs.html"><i class=" fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
-                <li><a  href="./../model6.html"> <button class="logout">  <i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></li> </a>
+                <li><a class="te" href="./../model6.html">  <i class="fa-solid fa-right-to-bracket"></i> LOGOUT</a></li>
             </ul>
         </div>
     </div>

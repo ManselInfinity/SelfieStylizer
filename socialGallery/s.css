@@ -41,6 +41,8 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 2%;
 }
 
 /* Slideshow container */
@@ -198,10 +200,9 @@ body {
     margin-bottom: 50px; 
     margin-left: 10px;
   }
-
   .navbar li i {
-    margin-right: 10px;
-    margin-left: -80px
+    margin-right: 100%;
+    margin-left: -444%;
   }
   
   .navbar li a {
@@ -236,7 +237,7 @@ padding: 30%;
     color: #daeaf1;
   }
 
-  .oo{
+  /* .oo{
     margin-right: 10px;
     margin-left: -80px;
     position: absolute;
@@ -248,4 +249,4 @@ padding: 30%;
     position: absolute;
     top:64%;
     left:25%;
-  }
+  } */
