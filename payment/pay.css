@@ -193,8 +193,8 @@ h1:hover {
 }
 
 .navbar li i {
-  margin-right: 10px;
-  margin-left: -80px
+  margin-right: 50%;
+  margin-left: -150%;
 }
 
 .navbar li a {

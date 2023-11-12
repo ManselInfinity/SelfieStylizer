@@ -55,7 +55,7 @@ $base64Image = base64_encode($imageData);
                 <li><a class="te"  href="./../stylise/stylise.html"><i class=" fa-solid fa-plus"></i>STYLISE</a></li><br><br>
                 <li><a class="te" href="./../socialGallery/social.php"><i class="fas fa-image"></i>S-GALLERY</a></li><br><br>
                 <li><a class="te" href="./../extraPages/aboutUs.html"><i class=" fa-solid fa-address-card"></i> ABOUT US</a></li><br><br>
-                <li><a  href="./../model6.html"> <button class="logout">  <i class="fa-solid fa-right-to-bracket"></i> LOGOUT</button></li> </a>
+                <li><a class="te" href="./../model6.html">  <i class="fa-solid fa-right-to-bracket"></i> LOGOUT</a></li>
             </ul>
         </div>
     </header>
