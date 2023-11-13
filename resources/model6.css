@@ -168,6 +168,7 @@ body {
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
+    word-spacing: 5px; /* Adjust the value as needed */
 }
 
 .remember-forget a {
@@ -201,12 +202,14 @@ body {
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
+    word-spacing: 5px; /* Adjust the value as needed */
 }
 
 .login-register p a {
     color: rgb(224, 223, 223);
     text-decoration: none;
     font-weight: 600;
+
 
 }
 
@@ -378,6 +381,7 @@ padding: 30%;
     position: relative;
     padding: 20px;
     margin-top: 10px;
+    word-spacing: 5px; /* Adjust the value as needed */
 }
 
 #message h1 {
@@ -387,13 +391,13 @@ padding: 30%;
 
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
-    color: rgb(61, 131, 61);
+    color: rgb(141, 144, 141);
 }
 
 
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
-    color: rgb(173, 77, 77);
+    color: rgb(17, 17, 17);
 }
 
 .outerDiv {
@@ -534,7 +538,7 @@ h1 {
     width: 600px;
     height: 400px;
 z-index: 1;
-    left: 20%;
+    left: 15%;
     letter-spacing: 30%;
     
   }

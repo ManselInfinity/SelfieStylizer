@@ -17,14 +17,14 @@ body {
     left: 15.5%;
     color: #fff;
     text-align: center;
-
+    word-spacing: 5px; /* Adjust the value as needed */
 
 }
 
 .con {
     background: transparent;
     font-family: ArcadeClassic;
-
+    word-spacing: 5px; /* Adjust the value as needed */
     backdrop-filter: blur(10px);
 }
 
@@ -49,7 +49,7 @@ body {
     color: wheat;
     background: transparent;
 
-
+    word-spacing: 5px; /* Adjust the value as needed */
     backdrop-filter: blur(10px);
 }
 
@@ -62,7 +62,7 @@ body {
     color: #fff;
     font-size: 29px;
     background: transparent;
-
+    word-spacing: 5px; /* Adjust the value as needed */
 
     backdrop-filter: blur(10px);
 }
@@ -87,7 +87,7 @@ body {
     font-size: 29px;
     background: transparent;
 
-
+    word-spacing: 5px; /* Adjust the value as needed */
     backdrop-filter: blur(10px);
 
 }
@@ -99,7 +99,7 @@ body {
     color: #fff;
     font-size: 29px;
     background: transparent;
-
+    word-spacing: 5px; /* Adjust the value as needed */
 
     backdrop-filter: blur(10px);
 }
@@ -124,7 +124,7 @@ body {
     font-size: 29px;
     background: transparent;
 
-
+    word-spacing: 5px; /* Adjust the value as needed */
     backdrop-filter: blur(10px);
 }
 
