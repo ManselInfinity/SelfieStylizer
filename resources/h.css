@@ -43,7 +43,7 @@ body {
 
 .v {
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 33%;
     font-family: ArcadeClassic;
     color: wheat;
@@ -57,7 +57,7 @@ body {
 
 .p {
     position: absolute;
-    top: 120%;
+    top: 140%;
     left: 18%;
     color: #fff;
     font-size: 29px;
@@ -69,19 +69,19 @@ body {
 
 .i {
     position: absolute;
-    top: 110%;
+    top: 130%;
     left: 65%;
 }
 
 .q {
     position: absolute;
-    top: 175%;
+    top: 195%;
     left: 18%;
 }
 
 .x1 {
     position: absolute;
-    top: 175%;
+    top: 195%;
     left: 65%;
     color: #fff;
     font-size: 29px;
@@ -94,7 +94,7 @@ body {
 
 .x2 {
     position: absolute;
-    top: 240%;
+    top: 260%;
     left: 18%;
     color: #fff;
     font-size: 29px;
@@ -106,19 +106,19 @@ body {
 
 .q2 {
     position: absolute;
-    top: 240%;
+    top: 260%;
     left: 65%;
 }
 
 .q3 {
     position: absolute;
-    top: 305%;
+    top: 325%;
     left: 18%;
 }
 
 .x3 {
     position: absolute;
-    top: 305%;
+    top: 325%;
     left: 65%;
     color: #fff;
     font-size: 29px;

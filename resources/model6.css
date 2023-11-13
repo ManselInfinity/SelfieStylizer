@@ -60,7 +60,7 @@ body {
 }
 
 .wrapper.active {
-    height: 520px;
+    height: 720px;
 }
 
 .wrapper .form-box {
@@ -325,7 +325,7 @@ body {
 
   .navbar li i {
     margin-right: 50%;
-    margin-left: -130%;
+    margin-left: -130%
   }
   
   .navbar li a {
@@ -358,9 +358,9 @@ padding: 30%;
     font-size: 30px;
     font-weight: 900;
     color: #eff1f1;
-    padding: 34%;
+    /* padding: 34%;
     background-image: url(img11.png);
-    border: 2px solid #011014;
+    border: 2px solid #011014; */
 
     border-radius: 25%;
     background: transparent;
@@ -558,4 +558,11 @@ z-index: 1;
 
   .logout:hover {
     color: #689cb4;
+  }
+
+
+  .fa-right-to-bracket{
+  position: absolute;
+  left: 10%;
+  right: 30%;
   }
