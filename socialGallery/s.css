@@ -225,7 +225,10 @@ padding: 30%;
 }
 
 
-
+.tt{
+  font-size: 50px;
+  word-spacing: 8px; /* Adjust the value as needed */
+}
 
 
 
