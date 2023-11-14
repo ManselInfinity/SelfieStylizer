@@ -50,12 +50,14 @@
                     align-items: center;
                     ">
 
+            <!-- acceptable values for style: "art", "arcane_caitlyn", "arcane_jinx", "disney", "jojo", "sketch_multi" -->
             <form action="./stylise.php" method="post" enctype="multipart/form-data">
 
                 <label for="sty" style="color: aliceblue;">Choose a Style:</label>
 
                 <select id="sty" name="style" class="frm">
                     <optgroup label="Choose Style">
+
                         <option value="art">Art </option>
                         <option value="arcane_caitlyn">Arcane Caitlyn </option>
                         <option value="arcane_jinx">Arcane Jinx </option>
@@ -64,28 +66,27 @@
                         <option value="sketch_multi">Sketch </option>
                         <option value="inkPunk">Ink Punk </option>
                         <option value="deathNoteRyuk">Death Note Ryuk </option>
+
+
+
                     </optgroup>
+
+
                 </select>
 
                 <br>
                 <br>
 
-                <input type="checkbox" id="useCamera" onchange="toggleCameraInput()">
-                <label for="useCamera" style="color: aliceblue;">Use Camera</label>
-
-                <br>
-                <br>
-
-                <label for="img" class="button">Select Image</label>
-
-                <!-- Use a hidden video element to capture the camera stream -->
-                <video id="camera" style="display: none;"></video>
+                <label for="img" class="button">
+                    Select Image </label>
 
                 <input type="file" accept="image/*" name="image" id="img" style=" width: 0.1px;
                                                                 height: 0.1px;
                                                                 opacity: 0;
                                                                 overflow: hidden;
                                                                 position: absolute;" required>
+
+                <!-- <div style="margin: 0.5%;"></div> -->
 
                 <input type="submit" name="submit" value="Upload" class="frm" onclick="showLoading()">
 
@@ -133,31 +134,15 @@
                         document.getElementById('loading').style.display = 'block';
                     }
 
-                    function toggleCameraInput() {
-                        const useCamera = document.getElementById("useCamera");
-                        const cameraInput = document.getElementById("img");
-                        const camera = document.getElementById("camera");
-
-                        if (useCamera.checked) {
-                            // Enable camera input
-                            camera.style.display = 'block';
-                            navigator.mediaDevices.getUserMedia({ video: true })
-                                .then(function (stream) {
-                                    camera.srcObject = stream;
-                                })
-                                .catch(function (error) {
-                                    console.error('Error accessing the camera: ', error);
-                                });
-                        } else {
-                            // Disable camera input
-                            camera.style.display = 'none';
-                            const tracks = camera.srcObject.getTracks();
-                            tracks.forEach(track => track.stop());
-                            camera.srcObject = null;
-                        }
-                    }
                 </script>
+
+
+
+
             </form>
+
+
+
         </div>
     </div>
 
@@ -177,7 +162,7 @@
                 padding-top: 20%;
                 align-items: center;
                 margin: auto;
-                color: aliceblue;">
+                color:aliceblue;">
         <div class="loader"></div>
         <p style="color: aliceblue;">Loading...</p>
     </div>
