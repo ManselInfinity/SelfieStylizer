@@ -87,6 +87,8 @@
                                                                 overflow: hidden;
                                                                 position: absolute;" required>
 
+                <button type="button" onclick="captureImage()" class="frm">Capture Image</button>
+
                 <input type="submit" name="submit" value="Upload" class="frm" onclick="showLoading()">
 
                 <br>
@@ -102,6 +104,7 @@
                     // JavaScript to display a preview of the selected image
                     const fileInput = document.getElementById("img");
                     const imagePreview = document.getElementById("imagePreview");
+                    const camera = document.getElementById("camera");
 
                     fileInput.addEventListener("change", function () {
                         const file = fileInput.files[0];
@@ -136,7 +139,6 @@
                     function toggleCameraInput() {
                         const useCamera = document.getElementById("useCamera");
                         const cameraInput = document.getElementById("img");
-                        const camera = document.getElementById("camera");
 
                         if (useCamera.checked) {
                             // Enable camera input
@@ -155,6 +157,28 @@
                             tracks.forEach(track => track.stop());
                             camera.srcObject = null;
                         }
+                    }
+
+                    function captureImage() {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = camera.videoWidth;
+                        canvas.height = camera.videoHeight;
+                        canvas.getContext('2d').drawImage(camera, 0, 0, canvas.width, canvas.height);
+
+                        const img = document.createElement("img");
+                        img.src = canvas.toDataURL('image/png');
+                        img.style.maxWidth = "90%";
+                        img.style.maxHeight = "500px"; // Limit the image size for display
+                        img.style.borderWidth = "5px";
+                        img.style.borderRadius = "10px";
+                        img.style.borderColor = "96, 111, 160";
+
+                        // Clear any previous image previews
+                        while (imagePreview.firstChild) {
+                            imagePreview.removeChild(imagePreview.firstChild);
+                        }
+
+                        imagePreview.appendChild(img);
                     }
                 </script>
             </form>
