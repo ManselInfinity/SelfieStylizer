@@ -98,7 +98,7 @@ h1:hover {
 
 .l {
     position: absolute;
-    top: -5%;
+    top: 15%;
     left: -2%;
     height: 84%;
     border: 2px solid #070707;
@@ -113,18 +113,18 @@ h1:hover {
     overflow: hidden;
 
 }
-
+/* 
 .mid {
     display: inline-block;
     width: 10%;
-    /*border:2px solid rgb(245, 240, 240);*/
+
     position: absolute;
     left: 0%;
     font-size: 30px;
     padding: 1%;
     top: 12px;
     color: blue;
-}
+} */
 /* 
 .navbar {
     color: rgb(71, 69, 69);
@@ -161,7 +161,7 @@ h1:hover {
 
   /* align-items: center; */
   position: fixed;
-  top: -12%;
+  top: 12%;
   left: 0px;
   width: 120px; 
   height: 100%;
@@ -323,6 +323,23 @@ padding: 30%;
       top: 6px;
       left: 6px;
     }
+  }
+
+  .fa-bars {
+  
+    position: fixed;
+    top: 7%;
+    left: 2%;
+    font-size: xx-large;
+    color: #f7f7f7;
+  }
+  .menu{
+
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    font-size: xx-large;
+    color: #f7f7f7;
   }
   
 
