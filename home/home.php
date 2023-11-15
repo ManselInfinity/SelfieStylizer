@@ -46,8 +46,9 @@ $nImages = $result->num_rows;
     
     
     <div class="header">
-    <i class="fas fa-bars" id="show-menu"></i>
-        <div class="l">
+    <i class="fas fa-bars" id="show-menu"></i> 
+    <p class="menu" style="font-size:36px;"  >MENU</p>
+    <div class="l">
         </div>
         
         <div class="mid">

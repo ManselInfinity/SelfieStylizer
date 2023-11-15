@@ -38,6 +38,7 @@ $nImages = $result->num_rows;
     
     <div class="header">
     <i class="fas fa-bars" id="show-menu"></i>
+    <p class="menu" style="font-size:36px;"  >MENU</p>
         <div class="l">
         </div>
         
@@ -87,7 +88,7 @@ $nImages = $result->num_rows;
                                                                                                                                 border: 2px solid rgba(30, 90, 168, 0.942);
                                                                                                                                 position:relative;
                                                                                                                                 left: 27%;" alt="img">
-                                <figcaption> <b style="color:antiquewhite"; style="font-size: 800px";  style="font-weight:bold;"><a class="tt" >User:</b> <b style="color:rgb(160, 200, 235);"; ><?php echo $row['userName'];?> </b>     <b style="color:antiquewhite" >Style:</b> <b style="color:rgb(160, 200, 235);"><?php echo $row['style'];?> </b></a></figcaption>                            
+                                <figcaption> <a class="tt" ><b style="color:antiquewhite"; style="font-size: 800px";  style="font-weight:bold;"> User:  &nbsp;</b> <b style="color:rgb(160, 200, 235);"; ><?php echo $row['userName'];?> </b>  &nbsp; &nbsp;&nbsp;&nbsp;  <b style="color:antiquewhite" > Style: &nbsp;</b> <b style="color:rgb(160, 200, 235);"><?php echo $row['style'];?>&nbsp; </b></a></figcaption>                            
                             </figure>
                         
                         </div>

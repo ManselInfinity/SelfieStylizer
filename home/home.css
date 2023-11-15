@@ -237,7 +237,14 @@
       top: 7%;
       left: 2%;
       font-size: xx-large;
-      color: #daeaf1;
+      color: #f7f7f7;
+    }
+    .menu{
+      position: fixed;
+      top: 1%;
+      left: 5%;
+      font-size: xx-large;
+      color: #f7f7f7;
     }
   
     /* .oo{

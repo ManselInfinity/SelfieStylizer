@@ -258,3 +258,11 @@ figcaption {
     padding: 5px;
 
 }
+
+.menu{
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    font-size: xx-large;
+    color: #f7f7f7;
+  }

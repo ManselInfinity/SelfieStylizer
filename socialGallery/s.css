@@ -230,6 +230,11 @@ body {
 .tt {
   font-size: 2em;
   word-spacing: 8px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+
   /* Adjust the value as needed */
 }
 
@@ -240,19 +245,14 @@ body {
   top: 7%;
   left: 2%;
   font-size: xx-large;
-  color: #daeaf1;
+  color: #f7f7f7;
 }
 
-/* .oo{
-    margin-right: 10px;
-    margin-left: -80px;
-    position: absolute;
-    top: 64%;
 
-  }
-
-  .pay{
-    position: absolute;
-    top:64%;
-    left:25%;
-  } */
+.menu{
+  position: fixed;
+  top: 1%;
+  left: 5%;
+  font-size: xx-large;
+  color: #f7f7f7;
+}
