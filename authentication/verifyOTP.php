@@ -13,8 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // otp verified, redirect to user home page
 
         $email = $_SESSION['email'];
-        $hashedPassword = $_SESSION['hashedPassword'];
-        $username = $_SESSION['username'];
+
 
         // if the user doesnt exist, the register page redirects here,
         // register user then
@@ -23,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if($result->num_rows == 0)
         {
+            $hashedPassword = $_SESSION['hashedPassword'];
+            $username = $_SESSION['username'];
             $sql = "INSERT INTO users VALUES('$email', '$hashedPassword', 100, '$username')";
             $conn->query($sql);            
         }
